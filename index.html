@@ -4,18 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Find Businesses Near You on Local Search Engine - Justdial</title>
-        <link rel="icon" href="./img/favicon.png">
+        <link rel="icon" href="./favicon.ico">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <style>
-            .a_tbdr{
-                border:1px dashed black;
+            .p_tbdr {
+                border: 1px solid #ccc;
             }
+
             body{
                 background-color: #E8E8E8;
-            } 
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+            }
             header{
-                height: 79px;
+                min-height: 80px;
             }
             main{
                 min-height: 2500px;
@@ -23,45 +28,63 @@
             footer{
                 height: 537px;
             }
-        </style>
-        <script>
+            .p_dropdown{
+                margin-top: 10px;
+            }
+            .p_bell{
+                margin-bottom: 0px ;
+            }
 
-        </script>
+        </style>
     </head>
     <body>
-        <div class="container-fluid p-4 pt-0 pb-0 a_tbdr">
-            <header class="a_tbdr">
+        <div class="container-fluid p-4 pt-0 pb-0 p_tbdr">
+            <header class="p_tbdr">
                 <div class="row m-0 h-100">
-                    <div class="col-2 p-0 a_tbdr">A</div>
-                    <div class="col-4 p-0 a_tbdr">B</div>
-                    <div class="col-6 p-0 a_tbdr d-flex align-items-center">
+                    <div class="col-2 p-0 p_tbdr">
+                         <img src="./img/justdial full.png"alt="Website Banner" />
+                    </div>
+                    <div class="col-3 p-0 p_tbdr"></div>
+                    <div class="col-7 p-0 p_tbdr d-flex align-items-center">
                         <ul class="nav">
-                            <li class="nav-item">
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa-solid fa-language"></i> En
+                            <li class="nav-item ">
+                                <div class="dropdown p_dropdown">
+                                    <button class="btn dropdown-toggle text-primary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-language text-primary"></i> En
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">English</a></li>
-                                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                        <li><a class="dropdown-item" href="#">English-EN</a></li>
+                                        <li><a class="dropdown-item" href="#">हिंदी - HI</a></li>
+                                        <li><a class="dropdown-item" href="#">ગુજરાતી - GU</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-black" href="#">We are hiring</a>
+                                <button type="button" class="btn"></button>
+                                <a class="nav-link text-black" href="#">Investor Relations</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <button type="button" class="btn"></button>
+                                <a class="nav-link text-black" href="#">Free Listing</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <li class="nav-item p_bell">
+                                <button type="button" class="btn btn-lg"></button>
+                                <a class="nav-link text-black" href="#">
+                                    <i class="fa-regular fa-bell"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item p_dropdown">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Log-In / Sign-Up
+                                </button>
                             </li>
                         </ul>
                     </div>
                 </div>
             </header>
-            <main class="a_tbdr">Main</main>
-            <footer class="a_tbdr">Footer</footer>
+            <main class="p_tbdr">
+                
+            </main>
+            <footer class="p_tbdr">Footer</footer>
         </div>
 
 
