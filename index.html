@@ -44,14 +44,18 @@
             }
             
             footer{
-                height: 400px;
+                height: 500px;
             }
             .p_dropdown{
                 margin-top: 10px;
             }
             .p_bell{
-                margin-bottom: 0px ;
+                margin-bottom: 10px ;
             }
+             .p_things_detail li:hover{
+                text-decoration: underline;
+
+             }
 
         </style>
     </head>
@@ -62,37 +66,45 @@
                     <div class="col-2 p-0 p_tbdr">
                          <img src="./img/justdial full.png"alt="Website Banner" />
                     </div>
-                    <div class="col-3 p-0 p_tbdr"></div>
-                    <div class="col-7 p-0 p_tbdr d-flex align-items-center">
-                        <ul class="nav">
+                    <div class="col-10 p-0 p_tbdr d-flex align-items-center justify-content-end">
+                        <ul class="nav p_dropdown p_wearehiring d-flex">
                             <li class="nav-item ">
-                                <div class="dropdown p_dropdown">
+                                <div class="dropdown ">
                                     <button class="btn dropdown-toggle text-primary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-language text-primary"></i> En
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">English-EN</a></li>
                                         <li><a class="dropdown-item" href="#">हिंदी - HI</a></li>
-                                        <li><a class="dropdown-item" href="#">ગુજરાતી - GU</a></li>
+                                        <li><a class="dropdown-item" href="#">मराठी - MR</a></li>
+                                        <li><a class="dropdown-item" href="#">বেঙ্গলি - BN</a></li>
+                                        
+                                        
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <button type="button" class="btn"></button>
-                                <a class="nav-link text-black" href="#">Investor Relations</a>
+                             <li class="nav-item">
+                                <button type="button" class="btn"><a class="nav-link text-black p_wearehiering d-flex" href="#">We Are Hiring</a></button>
                             </li>
                             <li class="nav-item">
-                                <button type="button" class="btn"></button>
-                                <a class="nav-link text-black" href="#">Free Listing</a>
+                                <button type="button" class="btn"><a class="nav-link text-black p_wearehiering d-flex" href="#">Investor Relations</a></button>
+                            </li>
+                             <li class="nav-item">
+                                <button type="button" class="btn"><a class="nav-link text-black" href="#">Advertise
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </a></button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn"><a class="nav-link text-black" href="#"><i class="fa-solid fa-chart-line"></i> Free Listing</a></button>
                             </li>
                             <li class="nav-item p_bell">
-                                <button type="button" class="btn btn-lg"></button>
-                                <a class="nav-link text-black" href="#">
+                                <button type="button" class="btn btn-lg"><a class="nav-link text-black" href="#">
                                     <i class="fa-regular fa-bell"></i>
-                                </a>
+                                </a></button>
                             </li>
                             <li class="nav-item p_dropdown">
-                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Log-In / Sign-Up
+                                <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Log-In / Sign-Up
+                                    <i class="fa-regular fa-circle-user"></i>
                                 </button>
                             </li>
                         </ul>
@@ -155,64 +167,66 @@
                         
                     </div>
                 </section>
-                <section class="p_tbdr p_m3"><ul class="nav">
-                    <div class="container my-4">
-                    <div class="row text-center g-4">
-                        <div class="col-4 col-lg-3 col-md-2">
-                        <div class="category-icon">
-                            <i class="bi bi-egg-fried"></i>
-                        </div>
-                        <div class="category-label">Restaurants</div>
-                        </div>
+                <section class="p_tbdr p_m3">
+                    <ul class="nav p_things_detail">
+                    <li class="container my-4">
+                    <li class="row text-center g-4">
+                        <li class="col-4 col-lg-3 col-md-2">
+                        <li class="category-icon">
+                            
+                        </li>
+                        <li class="category-label">Restaurants</li>
+                        
+                        </li>
 
-                        <div class="col-4 col-lg-3 col-md-2">
-                        <div class="category-icon">
+                        <li class="col-4 col-lg-3 col-md-2">
+                        <li class="category-icon">
                             <i class="bi bi-building"></i>
-                        </div>
-                        <div class="category-label">Hotels</div>
-                        </div>
+                        </li>
+                        <li class="category-label">Hotels</li>
+                        </li>
 
-                        <div class="col-4 col-lg-3 col-md-2">
-                        <div class="category-icon">
+                        <li class="col-4 col-lg-3 col-md-2">
+                        <li class="category-icon">
                             <i class="bi bi-flower2"></i>
-                        </div>
-                        <div class="category-label">Beauty Spa</div>
-                        </div>
-                        <div class="col-4 col-lg-3 col-md-2">
-                        <div class="category-icon">
+                        </li>
+                        <li class="category-label">Beauty Spa</li>
+                        </li>
+                        <li class="col-4 col-lg-3 col-md-2">
+                        <li class="category-icon">
                             <i class="bi bi-car-front"></i>
-                        </div>
-                        <div class="category-label">Car</div>
-                        </div>
+                        </li>
+                        <li class="category-label">Car</li>
+                        </li>
 
-                        <div class="col-4 col-lg-3 col-md-2">
-                        <div class="category-icon">
+                        <li class="col-4 col-lg-3 col-md-2">
+                        <li class="category-icon">
                             <i class="bi bi-house"></i>
-                        </div>
-                        <div class="category-label">Home</div>
-                        </div>
+                        </li>
+                        <li class="category-label">Home</li>
+                        </li>
 
-                        <div class="col-4 col-lg-3 col-md-2">
-                        <div class="category-icon">
+                        <li class="col-4 col-lg-3 col-md-2">
+                        <li class="category-icon">
                             <i class="bi bi-gem"></i>
-                        </div>
-                        <div class="category-label">wedding</div>
-                        </div>
-                        <div class="col-4 col-lg-3 col-md-2">
-                        <div class="category-icon">
+                        </li>
+                        <li class="category-label">wedding</li>
+                        </li>
+                        <li class="col-4 col-lg-3 col-md-2">
+                        <li class="category-icon">
                             <i class="bi bi-bar-chart"></i>
-                        </div>
-                        <div class="category-label">GYM</div>
-                        </div>
+                        </li>
+                        <li class="category-label">GYM</li>
+                        </li>
 
-                        <div class="col-4 col-lg-3 col-md-2">
-                        <div class="category-icon">
+                        <li class="col-4 col-lg-3 col-md-2">
+                        <li class="category-icon">
                             <i class="bi bi-chat-dots"></i>
-                        </div>
-                        <div class="category-label">services</div>
-                        </div>
-                    </div>
-                    </div>
+                        </li>
+                        <li class="category-label">services</li>
+                        </li>
+                    </li>
+                    </li>
                 </section>
                 <section class="p_tbdr p_m4">
                         <div class="container my-4">
@@ -423,7 +437,29 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
-            
+            window.addEventListener("scroll", () => {
+                    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+                    const windowHeight = window.innerHeight;
+                    const docHeight = document.documentElement.scrollHeight;
+
+                    const scrollPercent = (scrollTop / (docHeight - windowHeight)) * 100;
+
+                    const elements = document.querySelectorAll('.p_wearehiring');
+
+                    elements.forEach(element => {
+                    if (scrollPercent >= 0.2) {
+                        if (!element.classList.contains("invisible-hide")) {
+                        element.classList.add("invisible-hide");
+                        console.log("unhide");
+                        }
+                    } else {
+                        if (element.classList.contains("invisible-hide")) {
+                        element.classList.remove("invisible-hide");
+                        console.log("hide");
+                        }
+                    }
+                    });
+                });
         </script>
     </body>
 </html>
