@@ -30,10 +30,10 @@
                 height: 119px;
             }
             .p_m2{
-                height: 500px;
+                height: 550px;
             }
             .p_m3{
-                height: 250px;
+                height: 500px;
             }
             .p_m4{
                 height: 488px;
@@ -52,23 +52,72 @@
             .p_bell{
                 margin-bottom: 10px ;
             }
-             .p_things_detail li:hover{
+             .p_underline :hover{
                 text-decoration: underline;
+            }
+             .round_boarder {
+                text-align: center;
+                padding: 10px 15px;
+                border: 1px solid #ddd;
+                border-radius: 12px;
+                transition: transform 0.3s ease , box-shadow 0.3s ease;
+                background-color: #f9f9f9;}
+                .p_scroll{
+                border-radius: 20px;
 
-             }
+            }
+            .p_rotate-90{
+                transform: rotate(-90deg);
+                transform-origin: left top;
+                white-space: nowrap;
+            }
+            .p_adv_free{
+                right: -73px !important;
+            }
 
         </style>
     </head>
     <body>
+        <ul class="p_adv_free nav flex-column position-fixed top-50 end-0">
+            <li class="nav-item a_rotate-90 mb-5">
+                <a class=" rounded-top nav-link active bg-danger text-white" aria-current="page" href="#">Advertise</a>
+            </li>
+            <li class="nav-item a_rotate-90 mt-5">
+                <a class="rounded-top  nav-link bg-primary text-white" href="#">Free Listing</a>
+            </li>
+        </ul>
+        <button class=" btn btn-dark p_scroll fixed-top bottom-0 end-0 me-2 mb-3  d-none p_gototop" onclick="goToTop()">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
         <div class="container-fluid p-4 pt-0 pb-0 p_tbdr">
             <header class="p_tbdr fixed-top bg-white">
-                <div class="row m-0 h-100">
-                    <div class="col-2 p-0 p_tbdr">
-                         <img src="./img/justdial full.png"alt="Website Banner" />
-                    </div>
-                    <div class="col-10 p-0 p_tbdr d-flex align-items-center justify-content-end">
+                 <div class="col-12 p-0 p_tbdr d-flex align-items-center justify-content-end">
+                         <div class="row m-0 h-100 p_tbdr ">
+                        <img src="./img/justdial full.png"alt="Website Banner" />
+                        </div>
                         <ul class="nav p_dropdown p_wearehiring d-flex">
                             <li class="nav-item ">
+                                <div class="dropdown a_dropdown2">
+                        <!-- Input outside the dropdown toggle -->
+                        <button class="btn btn-drop dropdown-toggle w-20 n_dropdown2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-location-dot n_dropdown2"> </i>
+                        <input type="textarea" placeholder="Select Location">
+                        </button>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu a_dropdown2" id="locationDropdown">
+                            <li><a class="dropdown-item" href="#">Mira Road East,Thane</a></li>
+                            <li><a class="dropdown-item" href="#">Kandivali,Mumbai</a></li>
+                            <li><a class="dropdown-item" href="#">Malad West,Mumbai</a></li>
+                            <li><a class="dropdown-item" href="#">Kandivali West,Mumbai</a></li>
+                            <li><a class="dropdown-item" href="#">Thane West,Thane</a></li>
+                            <li><a class="dropdown-item" href="#">Nalasopara East,Palghar</a></li>
+                            <li><a class="dropdown-item" href="#">Mumbai Central,Mumbai</a></li>
+                        </ul>
+                        <button class="btn n_dropdown2" type="button"  aria-expanded="false">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="textarea" placeholder="Search anywhere">
+                            <i class="fa-solid fa-microphone"></i>
+                        </button>
                                 <div class="dropdown ">
                                     <button class="btn dropdown-toggle text-primary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-language text-primary"></i> En
@@ -81,6 +130,7 @@
                                         
                                         
                                     </ul>
+                                    
                                 </div>
                             </li>
                              <li class="nav-item">
@@ -110,23 +160,36 @@
                         </ul>
                     </div>
                 </div>
+                
             </header>
-            <main class="p_tbdr">
-                <section class="p_tbdr p_m1">
-                    <h4>Search across <strong>‘4.7 Crore+‘ Businesses</strong></h4>
-                    <div class="search-header py-3 px-4 d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center w-75">
-                            <input type="text" class="form-control me-2" placeholder="📍 search city" style="max-width: 200px;">
-                            <div class="input-group" style="flex-grow: 1;">
-                            <input type="text" class="form-control" placeholder="Search anything">
-                            <button class="btn btn-warning" type="button">
-                                <i class="bi bi-search"></i> 
-                            </button>
-                            </div>
-                        </div>
-                        <button class="btn btn-outline-success ms-3">Download App</button>
-                        </div>
-
+            <main class="a_tbdr mt-5">
+                <br>
+                <section class="a_m1  mt-5 p-0 pt-5">
+                    <h2 class="mt-4">
+                    Search across <span class="fw-bold">'5.9 Crore+'</span> <span class="highlight-blue text-primary">Products &amp; Services</span>
+                    </h2>
+                     <div class="dropdown a_dropdown2">
+                        <!-- Input outside the dropdown toggle -->
+                        <button class="btn btn-drop dropdown-toggle w-20 n_dropdown2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-location-dot n_dropdown2"> </i>
+                        <input type="textarea" placeholder="Select Location">
+                        </button>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu a_dropdown2" id="locationDropdown">
+                            <li><a class="dropdown-item" href="#">Mira Road East,Thane</a></li>
+                            <li><a class="dropdown-item" href="#">Kandivali,Mumbai</a></li>
+                            <li><a class="dropdown-item" href="#">Malad West,Mumbai</a></li>
+                            <li><a class="dropdown-item" href="#">Kandivali West,Mumbai</a></li>
+                            <li><a class="dropdown-item" href="#">Thane West,Thane</a></li>
+                            <li><a class="dropdown-item" href="#">Nalasopara East,Palghar</a></li>
+                            <li><a class="dropdown-item" href="#">Mumbai Central,Mumbai</a></li>
+                        </ul>
+                        <button class="btn n_dropdown2" type="button"  aria-expanded="false">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="textarea" placeholder="Search anywhere">
+                            <i class="fa-solid fa-microphone"></i>
+                        </button>
+                    </div>
                 </section>
                 <section class="p_tbdr p_m2">
                     <div class="row m-0 h-100">
@@ -167,66 +230,107 @@
                         
                     </div>
                 </section>
-                <section class="p_tbdr p_m3">
-                    <ul class="nav p_things_detail">
-                    <li class="container my-4">
-                    <li class="row text-center g-4">
-                        <li class="col-4 col-lg-3 col-md-2">
-                        <li class="category-icon">
-                            
+                 <div class="row p-0">
+                    
+                </div>
+                <section class="a_m3  text-danger ">
+                    <ul class="nav ">
+                     <li class="nav-item round_boarder border-dark m-3 p_underline  ">
+                            <a class="nav-link active  " aria-current="page" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/restaurant-2022.svg?w=48&q=75"/>
+                            <h6 >Restaurants</h6>
                         </li>
-                        <li class="category-label">Restaurants</li>
-                        
+                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hotel-2022.svg?w=48&q=75"/>
+                            <h6>Hotels</h6>
                         </li>
-
-                        <li class="col-4 col-lg-3 col-md-2">
-                        <li class="category-icon">
-                            <i class="bi bi-building"></i>
+                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/beauty.svg?w=48&q=75"/>
+                            <h6>Beauty Spa</h6>
                         </li>
-                        <li class="category-label">Hotels</li>
+                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link " href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/homedecor.svg?w=48&q=75"/>
+                            <h6>Home Decor</h6>
                         </li>
-
-                        <li class="col-4 col-lg-3 col-md-2">
-                        <li class="category-icon">
-                            <i class="bi bi-flower2"></i>
+                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link active" aria-current="page" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/hotkey_wedding_icon.gif?w=48&q=75"/>
+                            <h6>Wedding Planning</h6>
                         </li>
-                        <li class="category-label">Beauty Spa</li>
+                        <li class="nav-item p-3  round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/education.svg?w=48&q=75"/>
+                            <h6>Education</h6>
                         </li>
-                        <li class="col-4 col-lg-3 col-md-2">
-                        <li class="category-icon">
-                            <i class="bi bi-car-front"></i>
+                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/renthire.svg?w=48&q=75"/>
+                            <h6>Rent&Hire</h6>
                         </li>
-                        <li class="category-label">Car</li>
+                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link " href="#"></a>
+                            <img src="	https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hospital_2023.svg?w=48&q=75"/>
+                            <h6>Hospitals</h6>
                         </li>
-
-                        <li class="col-4 col-lg-3 col-md-2">
-                        <li class="category-icon">
-                            <i class="bi bi-house"></i>
+                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link active" aria-current="page" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/contractor-2022.svg?w=48&q=75"/>
+                            <h6>Contracters</h6>
                         </li>
-                        <li class="category-label">Home</li>
+                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pet_shops_2023.svg?w=48&q=75"/>
+                            <h6>Pet Shops</h6>
                         </li>
-
-                        <li class="col-4 col-lg-3 col-md-2">
-                        <li class="category-icon">
-                            <i class="bi bi-gem"></i>
+                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pg,hostelsandrooms.svg"/>
+                            <h6>PG/Hostels</h6>
                         </li>
-                        <li class="category-label">wedding</li>
+                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link " href="#" ></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/estate-agent.svg?w=48&q=75"/>
+                            <h6>Estate Agents</h6>
                         </li>
-                        <li class="col-4 col-lg-3 col-md-2">
-                        <li class="category-icon">
-                            <i class="bi bi-bar-chart"></i>
+                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link active" aria-current="page" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/dentist_2023.svg?w=48&q=75"/>
+                            <h6>Dentists</h6>
                         </li>
-                        <li class="category-label">GYM</li>
+                        <li class="nav-item p-3  round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/gym_2023.svg?w=48&q=75"/>
+                            <h6>Gym</h6>
                         </li>
-
-                        <li class="col-4 col-lg-3 col-md-2">
-                        <li class="category-icon">
-                            <i class="bi bi-chat-dots"></i>
+                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newhotkey/loans.svg?w=48&q=75"/>
+                            <h6>Loan</h6>
                         </li>
-                        <li class="category-label">services</li>
+                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link " href="#" ></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newhotkey/loans.svg?w=48&q=75"/>
+                            <h6>Event Organizers</h6>
                         </li>
-                    </li>
-                    </li>
+                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link active" aria-current="page" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/driving_school_2023.svg?w=48&q=75"/>
+                            <h6>Driving Schools</h6>
+                        </li>
+                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
+                            <a class="nav-link" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/packers_movers_2023.svg?w=48&q=75"/>
+                            <h6>Packers&Movers</h6>
+                        </li>
+                        <li class=" nav-item p-3 round_boarder border-dark  m-3 p_underline">
+                            <a class="nav-link" href="#"></a>
+                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/courier_2023.svg?w=48&q=75"/>
+                            <h6>Courier Services</h6>
+                        </li>
+                     </ul>
                 </section>
                 <section class="p_tbdr p_m4">
                         <div class="container my-4">
@@ -440,26 +544,46 @@
             window.addEventListener("scroll", () => {
                     const scrollTop = window.scrollY || document.documentElement.scrollTop;
                     const windowHeight = window.innerHeight;
-                    const docHeight = document.documentElement.scrollHeight;
+                    const docHeight = document.documentElement.scrollHeight});
 
                     const scrollPercent = (scrollTop / (docHeight - windowHeight)) * 100;
 
                     const elements = document.querySelectorAll('.p_wearehiring');
-
-                    elements.forEach(element => {
-                    if (scrollPercent >= 0.2) {
-                        if (!element.classList.contains("invisible-hide")) {
-                        element.classList.add("invisible-hide");
-                        console.log("unhide");
+                    const elementt =  document.querySelector('p_gototop');
+                    if (scrollPercent >= 0.2){
+                        
+                        console.log("Hello World");
+                        if(element && element.style.display !== "none") {
+                            element.style.display = "none"; // Hide Element
                         }
-                    } else {
-                        if (element.classList.contains("invisible-hide")) {
-                        element.classList.remove("invisible-hide");
-                        console.log("hide");
+                    }else {
+                        if(element && element.style.display === "none") {
+                            element.style.display = "block"; // Show Element 
                         }
                     }
-                    });
-                });
+                    if(scrollPercent >= 0.2){
+
+                        console.log("haa");
+                        if (elementt.classList.contains("d-none")) {
+                            elementt.classList.remove("d-none"); 
+                            elementt.classList.add("d-flex");
+
+                        }
+                    } else {
+                        if(!elementt.classList.contains("d-none")) {
+                            elementt.classList.remove("d-flex"); 
+                            elementt.classList.add("d-none");
+
+
+                        }
+                        
+                    }
+        </script>
+        <script>
+            function goToTop(){
+
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
         </script>
     </body>
 </html>
