@@ -21,26 +21,26 @@
                 font-style: normal;
             }
             header{
-                min-height: 50px;
+                min-height: 80px;
             }
             main{
                 min-height: 2500px;
             }
             .p_m1{
-                height: 200px;
+                height: 600px;
             }
             .p_m2{
-                height: 500px;
+                height: 110px;
             }
             .p_m3{
-                height: 500px;
+                height: 250px;
             }
             .p_m4{
                 height: 488px;
             }
            
             .p_m5{
-                height: 200px;
+                height: 400px;
             }
             
             footer{
@@ -61,9 +61,8 @@
                 border: 1px solid #ddd;
                 border-radius: 12px;
                 transition: transform 0.3s ease , box-shadow 0.3s ease;
-                background-color: #f9f9f9;
-            }
-            .p_scroll{
+                background-color: #f9f9f9;}
+                .p_scroll{
                 border-radius: 20px;
 
             }
@@ -76,36 +75,64 @@
                 right: -73px !important;
             }
 
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5rem;
+            z-index: 1;
+        }
+
+        .card {
+            overflow: hidden;
+            /* Prevent image from going outside */
+            border-radius: 10px;
+        }
+
+        .img-zoom {
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover .img-zoom {
+            transform: scale(1.1);
+        }
+
+        .card-img-top {
+            height: 120px;
+            object-fit: cover;
+        }
+
         </style>
     </head>
     <body>
         <ul class="p_adv_free nav flex-column position-fixed top-50 end-0">
             <li class="nav-item p_rotate-90 mb-5">
-                <a class=" rounded-top nav-link active bg-danger text-white" aria-current="page" href="#">Advertise</a>
+                <a class=" rounded-top nav-link active bg-danger text-white " aria-current="page" href="#">Advertise</a>
             </li>
             <li class="nav-item p_rotate-90 mt-5">
                 <a class="rounded-top  nav-link bg-primary text-white" href="#">Free Listing</a>
             </li>
         </ul>
-        <button class=" btn btn-dark rounded-5 position-fixed bottom-0 end-0 me-2 mb-2 ">
+        <button class=" btn btn-dark p_scroll fixed-top bottom-0 end-0 me-2 mb-3  d-none p_gototop" onclick="goToTop()">
             <i class="fa-solid fa-chevron-up"></i>
         </button>
         <div class="container-fluid p-4 pt-0 pb-0 p_tbdr">
-            <header class="p_tbdr bg-white fixed-top">
+            <header class="p_tbdr fixed-top bg-white">
                  <div class="col-12 p-0 p_tbdr d-flex align-items-center justify-content-end">
                          <div class="row m-0 h-100 p_tbdr ">
                         <img src="./img/justdial full.png"alt="Website Banner" />
                         </div>
                         <ul class="nav p_dropdown p_wearehiring d-flex">
                             <li class="nav-item ">
-                                <div class="dropdown a_dropdown2">
+                                <div class="dropdown p_dropdown2">
                         <!-- Input outside the dropdown toggle -->
-                        <button class="btn btn-drop dropdown-toggle w-20 n_dropdown2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-drop dropdown-toggle w-20 p_dropdown2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-location-dot n_dropdown2"> </i>
                         <input type="textarea" placeholder="Select Location">
                         </button>
                         <!-- Dropdown menu -->
-                        <ul class="dropdown-menu p_dropdown2" id="locationDropdown">
+                        <ul class="dropdown-menu a_dropdown2" id="locationDropdown">
                             <li><a class="dropdown-item" href="#">Mira Road East,Thane</a></li>
                             <li><a class="dropdown-item" href="#">Kandivali,Mumbai</a></li>
                             <li><a class="dropdown-item" href="#">Malad West,Mumbai</a></li>
@@ -114,7 +141,7 @@
                             <li><a class="dropdown-item" href="#">Nalasopara East,Palghar</a></li>
                             <li><a class="dropdown-item" href="#">Mumbai Central,Mumbai</a></li>
                         </ul>
-                        <button class="btn p_dropdown2" type="button"  aria-expanded="false">
+                        <button class="btn n_dropdown2" type="button"  aria-expanded="false">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="textarea" placeholder="Search anywhere">
                             <i class="fa-solid fa-microphone"></i>
@@ -163,267 +190,235 @@
                 </div>
                 
             </header>
-            <main class="a_tbdr mt-5">
-                <br>
-                <section class="p_m1 mt-5 p-0 pt-5 ">
-                    <h2 class="mt-4">
-                    Search across <span class="fw-bold">'5.9 Crore+'</span> <span class="highlight-blue text-primary">Products &amp; Services</span>
-                    </h2>
-                     <div class="dropdown a_dropdown2">
-                        <!-- Input outside the dropdown toggle -->
-                        <button class="btn btn-drop dropdown-toggle w-20 n_dropdown2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-location-dot n_dropdown2"> </i>
-                        <input type="textarea" placeholder="Select Location">
-                        </button>
-                        <!-- Dropdown menu -->
-                        <ul class="dropdown-menu a_dropdown2" id="locationDropdown">
-                            <li><a class="dropdown-item" href="#">Mira Road East,Thane</a></li>
-                            <li><a class="dropdown-item" href="#">Kandivali,Mumbai</a></li>
-                            <li><a class="dropdown-item" href="#">Malad West,Mumbai</a></li>
-                            <li><a class="dropdown-item" href="#">Kandivali West,Mumbai</a></li>
-                            <li><a class="dropdown-item" href="#">Thane West,Thane</a></li>
-                            <li><a class="dropdown-item" href="#">Nalasopara East,Palghar</a></li>
-                            <li><a class="dropdown-item" href="#">Mumbai Central,Mumbai</a></li>
-                        </ul>
-                        <button class="btn n_dropdown2" type="button"  aria-expanded="false">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="textarea" placeholder="Search anywhere">
-                            <i class="fa-solid fa-microphone"></i>
-                        </button>
-                    </div>
-                </section>
-                <section class="p_tbdr p_m2">
-                    <div class="row m-0 h-100">
-                        <div class="col-6 p_tbdr p-0">
-                        <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="./img/ads1.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="./img/ads2.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="./img/ads3.png" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                        </div>
-                        </div> 
-                        <div class="col-5 p_tbdr p-0 m-5">
-                            <div>
-                                <img src="./img/sport.webp" class="d-block w-100 img-fluid">
-                            </div>
-
-                        </div> 
-                        
-                    </div>
-                </section>
-                 <div class="row p-0">
-                    
-                </div>
-                <section class="p_m3  text-danger ">
-                    <ul class="nav ">
-                     <li class="nav-item round_boarder border-dark m-3 p_underline  ">
-                            <a class="nav-link active  " aria-current="page" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/restaurant-2022.svg?w=48&q=75"/>
-                            <h6 >Restaurants</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hotel-2022.svg?w=48&q=75"/>
-                            <h6>Hotels</h6>
-                        </li>
-                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/beauty.svg?w=48&q=75"/>
-                            <h6>Beauty Spa</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link " href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/homedecor.svg?w=48&q=75"/>
-                            <h6>Home Decor</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link active" aria-current="page" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/hotkey_wedding_icon.gif?w=48&q=75"/>
-                            <h6>Wedding Planning</h6>
-                        </li>
-                        <li class="nav-item p-3  round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/education.svg?w=48&q=75"/>
-                            <h6>Education</h6>
-                        </li>
-                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/renthire.svg?w=48&q=75"/>
-                            <h6>Rent&Hire</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link " href="#"></a>
-                            <img src="	https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hospital_2023.svg?w=48&q=75"/>
-                            <h6>Hospitals</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link active" aria-current="page" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/contractor-2022.svg?w=48&q=75"/>
-                            <h6>Contracters</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pet_shops_2023.svg?w=48&q=75"/>
-                            <h6>Pet Shops</h6>
-                        </li>
-                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pg,hostelsandrooms.svg"/>
-                            <h6>PG/Hostels</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link " href="#" ></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/estate-agent.svg?w=48&q=75"/>
-                            <h6>Estate Agents</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link active" aria-current="page" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/dentist_2023.svg?w=48&q=75"/>
-                            <h6>Dentists</h6>
-                        </li>
-                        <li class="nav-item p-3  round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/gym_2023.svg?w=48&q=75"/>
-                            <h6>Gym</h6>
-                        </li>
-                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newhotkey/loans.svg?w=48&q=75"/>
-                            <h6>Loan</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link " href="#" ></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newhotkey/loans.svg?w=48&q=75"/>
-                            <h6>Event Organizers</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link active" aria-current="page" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/driving_school_2023.svg?w=48&q=75"/>
-                            <h6>Driving Schools</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/packers_movers_2023.svg?w=48&q=75"/>
-                            <h6>Packers&Movers</h6>
-                        </li>
-                        <li class=" nav-item p-3 round_boarder border-dark  m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/courier_2023.svg?w=48&q=75"/>
-                            <h6>Courier Services</h6>
-                        </li>
-                     </ul>
-                </section>
-                <section class="p_tbdr p_m4">
-                        <div class="container my-4">
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                <div class="bg-light p-3 rounded shadow-sm">
-                                    <div class="section-title">Wedding Requisites</div>
-                                    <div class="row text-center">
-                                    <div class="col-4">
-                                        <div class="card custom-card">
-                                        <img src="./img/banquet.jpg" class="card-img-top" alt="Banquet Halls">
-                                        <div class="card-body p-2">
-                                            <p class="card-text small">Banquet Halls</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card custom-card">
-                                        <img src="./img/bridal.jpg" class="card-img-top" alt="Bridal">
-                                        <div class="card-body p-2">
-                                            <p class="card-text small">Bridal Requisite</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card custom-card">
-                                        <img src="./img/carters.jpg" class="card-img-top" alt="Caterers">
-                                        <div class="card-body p-2">
-                                            <p class="card-text small">Caterers</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="col-6">
-                                        <div class="card custom-card">
-                                        <img src="./img/jewel.jpg" class="card-img-top" alt="jewelery">
-                                        <div class="card-body p-2">
-                                            <p class="card-text small">jewellery</p>
-                                            
-                                </div>
-                </section>
+            
                 
-                <section class="p_tbdr p_m5">
-                    <div class="container-fluid bg-warning-subtle py-4">
-                      <h4 class="fw-bold text-success mb-4">Latest Movies & Review</h4>
-                        <div class="row g-4">
-                    
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/Sitaare_Zameen_Par_poster.jpg.webp" class="img-fluid rounded mb-2" alt="Sitaare Zameen Par">
-                            <p class="mb-1 fw-bold">Sitaare Zameen Par<br><small class="text-muted">(Hindi Movie)</small></p>
-                            <p class="text-muted">Hindi &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 78%</span>
+        <main class="bg-white p-0 pt-5">
+            <!-- Banner Section -->
+            <section class=" p_m1 text-white text-center pt-5 ">
+                <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/resfilter_banner_image.png?w=3840&amp;q=75" class="w-100" alt="Food Banner"
+                    style="max-height: 400px; object-fit: cover;">
+                <div class="position-absolute top-50 start-50 translate-middle text-white">
+                    <h1 class="fw-bold mb-5">IT'S ALL ABOUT FOOD</h1>
+                </div>
+                <section class="mt-5">
+                    <!-- Overlapping Card Section -->
+                    <div class="position-absolute w-100" style="bottom: -40%; left: 0;">
+                        <div class="d-flex justify-content-center gap-4 flex-wrap">
+                            <div class="px-4 py-3 bg-white rounded-3 shadow-sm text-center">
+                                <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/resfilter_booktable.svg?w=128&q=75" alt="Book Table" width="40" class="mb-2">
+                                <p class="fw-bold mb-1 text-dark">Book A Table</p>
+                                <a href="#" class="text-decoration-none text-primary">Make Reservation ></a>
                             </div>
-                            
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/Maa_(2025_film).jpg" class="img-fluid rounded mb-2" alt="Maa 2025">
-                            <p class="mb-1 fw-bold">Maa (2025 Film)<br><small class="text-muted">(Hindi Movie)</small></p>
-                            <p class="text-muted">Hindi &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 20%</span>
+                            <div class="px-4 py-3 bg-white rounded-3 shadow-sm text-center">
+                                <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/resfilter_trending.svg?w=128&q=75" alt="Trending" width="40" class="mb-2">
+                                <p class="fw-bold mb-1 text-dark">WHAT'S TRENDING?</p>
+                                <a href="#" class="text-decoration-none text-primary">Try it Yourself ></a>
                             </div>
-                            
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/f1.jpg" class="img-fluid rounded mb-2" alt="F1">
-                            <p class="mb-1 fw-bold">F1</p>
-                            <p class="text-muted">English &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 20%</span>
+                            <div class="px-4 py-3 bg-white rounded-3 shadow-sm text-center">
+                                <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/resfilter_orderfood.svg?w=128&q=75" alt="Order Food" width="40" class="mb-2">
+                                <p class="fw-bold mb-1 text-dark">ORDER FOOD</p>
+                                <a href="#" class="text-decoration-none text-primary">5830 Restaurants ></a>
                             </div>
-                            
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/jaran.jpg" class="img-fluid rounded mb-2" alt="Jarann">
-                            <p class="mb-1 fw-bold">Jarann<br><small class="text-muted">(Marathi Movie)</small></p>
-                            <p class="text-muted">Marathi &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 60%</span>
-                            </div>
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/meg.avif" class="img-fluid rounded mb-2" alt="meg">
-                            <p class="mb-1 fw-bold">Meg<br><small class="text-muted">(english)</small></p>
-                            <p class="text-muted">Hollywood &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 95%</span>
-                            </div>
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/squid.jpg" class="img-fluid rounded mb-2" alt="squid game">
-                            <p class="mb-1 fw-bold">squid game<br><small class="text-muted">(hollywood)</small></p>
-                            <p class="text-muted">series &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 99%</span>
-                            </div>
+                        </div>
+                    </div>
                 </section>
-           
+            </section>
+
+            <!-- Categories -->
+            <section class="mt-5 p-4 pt-5">
+                <div class="row g-4">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="indian.html">
+                        <div class="card h-100 d-flex flex-column">
+                            <img src="./img/indian.webp" class="card-img-top img-zoom" alt="Indian Flavours">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Indian Flavours</h5>
+                                <ul class="list-unstyled">
+                                    <li>- Tandoori</li>
+                                    <li>- South Indian</li>
+                                    <li>- Pure Veg </li>
+                                    <li>- North Indian</li>
+                                    <li class="text-primary mt-3">- More</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 d-flex flex-column">
+                            <img src="./img/cusinie.jpg" class="card-img-top img-zoom " alt="Indian Flavours">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Global Cuisines</h5>
+                                <ul class="list-unstyled">
+                                    <li>- Pan Asian</li>
+                                    <li>- Continental</li>
+                                    <li>- Italian </li>
+                                    <li>- chinese</li>
+                                    <li class="text-primary mt-3">- More</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 d-flex flex-column">
+                            <img src="./img/night.jpg" class="card-img-top img-zoom" alt="Indian Flavours">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Nightlife</h5>
+                                <ul class="list-unstyled">
+                                    <li>- Pubs</li>
+                                    <li>- Launge Bars</li>
+                                    <li>- Night Club</li>
+                                    <li>- Restaurants & Bars</li>
+                                    <li class="text-primary mt-3">- More</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 d-flex flex-column">
+                            <img src="./img/quick.jpg" class="card-img-top img-zoom" alt="Indian Flavours">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Quick Bites</h5>
+                                <ul class="list-unstyled">
+                                    <li>- Bakeries</li>
+                                    <li>- Coffee Shops</li>
+                                    <li>- Fast Food</li>
+                                    <li>- Pizza Outlets</li>
+                                    <li class="text-primary mt-3">- More</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 d-flex flex-column">
+                            <img src="./img/sweet.jpg" class="card-img-top img-zoom" alt="Indian Flavours">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Sweet Tooth</h5>
+                                <ul class="list-unstyled">
+                                    <li>- Cake Shops</li>
+                                    <li>- Desserts</li>
+                                    <li>- Donut Outlets</li>
+                                    <li>- Sweets</li>
+                                    <li class="text-primary mt-3">- More</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card h-100 d-flex flex-column">
+                            <img src="./img/foodie.webp" class="card-img-top img-zoom" alt="Indian Flavours">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Foodie</h5>
+                                <ul class="list-unstyled">
+                                    <li>- Chinese</li>
+                                    <li>- Dhaba Joints</li>
+                                    <li>- Fab Biryanis</li>
+                                    <li>- Thali Feasts</li>
+                                    <li class="text-primary mt-3">- More</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center my-5">
+                    <button class="btn btn-primary d-inline-flex align-items-center px-5 py-2 ">
+                        <span class="me-2 ">View All Categories</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="p_m2 p-5 pt-5">
+
+                <h5 class="fw-bold">Unveiling the Culinary Treasures: Exploring Local Restaurants & Eateries near Mumbai
+                </h5>
+                <h6>Welcome to the vibrant world of local restaurants, where every dish tells a story and every bite is
+                    an adventure! In this article, we will take a delightful journey through the bustling streets and
+                    cozy corners of your neighborhood to discover the hidden gems known as eateries, food places, and
+                    top-rated restaurants. From savory sensations to sweet delights, there's something for every palate
+                    in these food spots that define the essence of culinary excellence.</h6>
+
+                <h5 class="mt-4 fw-bold">Exploring the Local Scene</h5>
+                <h6>When it comes to experiencing the true essence of a city or town, few things rival the joy of
+                    indulging in its local cuisine. Local restaurants offer a glimpse into the heart and soul of a
+                    community, serving up not just food but also a sense of belonging and tradition. Whether you're
+                    craving comfort food or eager to explore exotic flavors, these culinary havens have something to
+                    satisfy every craving.</h6>
+
+                <h5 class="mt-4 fw-bold">Restaurant Menu: A Feast for the Senses</h5>
+                <h6>Step inside any local restaurant, and you'll be greeted by a symphony of aromas, colors, and flavors
+                    that titillate the senses. From sizzling steaks to aromatic curries, the restaurant menu is a
+                    treasure trove of culinary delights waiting to be explored. Each dish is carefully crafted to
+                    tantalize the taste buds and leave a lasting impression, ensuring that every meal is a memorable
+                    experience.</h6>
+
+                <h5 class="mt-4 fw-bold">Global Cuisines: A World of Flavors at Your Doorstep </h5>
+                <h6>One of the greatest joys of dining at local restaurants is the opportunity to embark on a culinary
+                    journey around the world without ever leaving your neighborhood. From Italian trattorias to Thai
+                    street food stalls, these establishments offer a diverse array of global cuisines that reflect the
+                    rich tapestry of cultures that call your city home. Whether you're in the mood for a taste of India
+                    or craving the bold flavors of Mexico, you'll find it all right here in your own backyard.</h6>
+
+                <h5 class="mt-4 fw-bold">Nightlife: Where Food Meets Entertainment </h5>
+                <h6>Local restaurants aren't just about great food; they're also hubs of social activity and nightlife.
+                    As the sun sets and the city comes alive, these eateries transform into vibrant gathering spots
+                    where friends come together to eat, drink, and make memories. Whether you're looking for a cozy
+                    corner to enjoy a romantic dinner or a lively atmosphere to dance the night away, the local
+                    restaurant scene has something for everyone.</h6>
+
+                <h5 class="mt-4 fw-bold">Quick Bites: On-the-Go Gastronomy </h5>
+                <h6>In today's fast-paced world, convenience is key, and local restaurants are here to deliver. Whether
+                    you're rushing to catch a train or grabbing a quick bite between meetings, these food spots offer a
+                    delicious solution to your hunger pangs. From gourmet sandwiches to freshly baked pastries, you'll
+                    find an array of quick bites that are as satisfying as they are convenient.</h6>
+
+                <h5 class="mt-4 fw-bold">Sweet Tooth: Indulge Your Dessert Desires </h5>
+                <h6>No meal is complete without something sweet to satisfy your sweet tooth, and local restaurants have
+                    you covered. From decadent cakes to artisanal chocolates, these establishments offer a tempting
+                    array of desserts that are sure to delight your taste buds. Whether you're celebrating a special
+                    occasion or simply treating yourself to a little indulgence, there's no shortage of sweet treats to
+                    choose from.</h6>
+
+                <h3 class="mt-5 ">Frequently Asked Questions</h3>
+
+                <h5 class="mt-4 fw-bold">1. What are the key factors to consider when choosing a restaurant in Mumbai?
+                </h5>
+                <h6>You should consider the type of cuisine you're in the mood for, the restaurant's location, its
+                    hygiene standards, ambiance, price range, customer reviews, and any special requirements like
+                    vegetarian options, parking, or Wi-Fi.</h6>
+
+                <h5 class="mt-4 fw-bold">2. How can I find the best local restaurants in Mumbai?</h5>
+                <h6>You can use online platforms such as Justdial, Zomato, Swiggy or Google Maps. Asking locals or
+                    friends for recommendations, checking social media pages and food blogs, and looking for popular
+                    food festivals or food trails can also help.</h6>
+
+                <h5 class="mt-4 fw-bold">3. What should I look for in online reviews of Indian restaurants?</h5>
+                <h6>Look for consistency in positive feedback regarding food quality and taste, comments on cleanliness
+                    and hygiene, feedback on service and staff behavior, information on portion sizes and value for
+                    money, and any recurring negative comments or issues mentioned by multiple reviewers</h6>
+
+                <h5 class="mt-4 fw-bold">4. Are there any safety tips to keep in mind when dining out in India?</h5>
+                <h6>Opt for bottled water to avoid waterborne diseases. Check the hygiene rating of the restaurant.
+                    Prefer busy and well-reviewed places, as high turnover often indicates freshness. Be cautious of
+                    street food; ensure it's cooked fresh and served hot. Verify the authenticity of ingredients,
+                    especially in international cuisine restaurants.</h6>
+
+                <h5 class="mt-4 fw-bold">5. What are some famous regional cuisines to try in different parts of India?
+                </h5>
+                <h6>In North India, you can try Punjabi, Kashmiri, and Mughlai cuisines. In South India, popular options
+                    include Andhra, Tamil, Kerala, Karnataka, Goan, and Chettinad cuisines. In West India, you can
+                    explore Gujarati, Maharashtrian, and Goan cuisines. East India offers Bengali, Assamese, and Oriya
+                    cuisines.</h6>
+
+
+            </section>
+
         </main>
-        <footer class="n_tbdr">
+            <footer class="n_tbdr">
             <div>
                 <p>
                     <div>
@@ -542,7 +537,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
-
             let triggered = false;
 
             window.onscroll = function () {
@@ -552,7 +546,7 @@
 
                     const scrollPercent = (scrollTop / (docHeight - windowHeight)) * 100;
 
-                    const element = document.querySelectorAll('p_wearehiring');
+                    const elements = document.querySelectorAll('.p_wearehiring');
                     const elementt =  document.querySelector('p_gototop');
                     if (scrollPercent >= 0.2){
                         
