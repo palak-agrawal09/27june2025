@@ -13,7 +13,6 @@
             .p_tbdr {
                 border: 1px dashed #ccc;
             }
-
             body{
                 background-color: #E8E8E8;
                 font-family: "Poppins", sans-serif;
@@ -21,33 +20,19 @@
                 font-style: normal;
             }
             header{
-                min-height: 50px;
+                min-height: 80px;
             }
             main{
                 min-height: 2500px;
             }
-            .p_m1{
-                height: 200px;
-            }
-            .p_m2{
-                height: 500px;
-            }
-            .p_m3{
-                height: 500px;
-            }
-            .p_m4{
-                height: 488px;
-            }
-           
-            .p_m5{
-                height: 200px;
-            }
-            
             footer{
                 height: 500px;
             }
             .p_dropdown{
                 margin-top: 10px;
+            }
+            .p_dropdown2{
+
             }
             .p_bell{
                 margin-bottom: 10px ;
@@ -75,520 +60,1527 @@
             .p_adv_free{
                 right: -73px !important;
             }
+            .p_slide{
+                height: 240px;
+            }
+            .vertical-buttons {
+                position: fixed; transform: rotate(180deg);
+                color: white;
+                border-radius:8px 0 0 8px;
+                top: 40%;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                z-index: 1000;
+                user-select: none;
+            }
+            .side-button {
+                border-radius:0 8px 8px 0;
+                writing-mode:vertical-rl;
+                text-orientation: mixed;
+                padding: 4px 4px;
+                border-color: transparent;
+                font-weight: 600;
+                font-size: 14px;
+                color: white;
+                cursor: pointer;
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+                white-space: nowrap;
+                letter-spacing: 0.05em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                user-select: none;
+            }
+            .advertise {
+                background: linear-gradient(135deg, red,red);
+            }
+            .advertise:hover {
+                background: linear-gradient(135deg, red, red);
+            }
 
-        </style>
-    </head>
-    <body>
-        <ul class="p_adv_free nav flex-column position-fixed top-50 end-0">
-            <li class="nav-item p_rotate-90 mb-5">
-                <a class=" rounded-top nav-link active bg-danger text-white" aria-current="page" href="#">Advertise</a>
-            </li>
-            <li class="nav-item p_rotate-90 mt-5">
-                <a class="rounded-top  nav-link bg-primary text-white" href="#">Free Listing</a>
-            </li>
-        </ul>
-        <button class=" btn btn-dark rounded-5 position-fixed bottom-0 end-0 me-2 mb-2 ">
-            <i class="fa-solid fa-chevron-up"></i>
-        </button>
-        <div class="container-fluid p-4 pt-0 pb-0 p_tbdr">
-            <header class="p_tbdr bg-white fixed-top">
-                 <div class="col-12 p-0 p_tbdr d-flex align-items-center justify-content-end">
-                         <div class="row m-0 h-100 p_tbdr ">
-                        <img src="./img/justdial full.png"alt="Website Banner" />
+        
+            .free-listing {
+                background: linear-gradient(135deg, #007bff, #007bff);
+            }
+
+            .free-listing:hover {
+                background: linear-gradient(135deg, #007bff, #007bff);
+            }
+            .p_cards{
+                height: 224px;
+                text-align: left;
+            }
+            .category-card {
+                width: 150px;
+                min-height: 200px;
+                color: white;
+                border-radius: 12px;
+                padding: 15px;
+                font-weight: 500;
+            }
+            .p_slidear{
+                width: 40;
+            }
+            .p_icons .btn img {
+                max-width: 35px;
+                margin-bottom: 8px;
+                transition: transform 0.2s;
+            }
+
+            .p_icons .btn:hover img {
+                transform: scale(1.1);
+            }
+            .category-section {
+                margin-bottom: 2rem;
+            }
+            .category-title {
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+            .category-item {
+                margin-bottom: 1rem;
+            }
+            .service-box {
+                padding: 1rem;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                margin-bottom: 1rem;
+            }
+            .highlight-green {
+                color: green;
+                font-size: 0.8rem;
+            }
+            .rating-badge {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background: rgba(0,0,0,0.7);
+                color: white;
+                padding: 3px 8px;
+                border-radius: 4px;
+                font-size: 0.8rem;
+            }
+            .movie-card {
+                border-radius: 8px;
+                height: 120px;
+                object-fit: cover;
+            }
+            .icon-box img {
+                width: 40px;
+                height: 40px;
+            }
+            .p_foot {
+                background: #f8f9fa;
+                padding: 2rem;
+                border-radius: 8px;
+            }
+            
+            </style>
+            </head>
+            <body>
+                <div class="vertical-buttons" aria-label="Side vertical action buttons">
+                    <button class="side-button advertise" type="button" aria-label="Advertise">Advertise</button>
+                    <button class="side-button free-listing" type="button" aria-label="Free Listing">Free Listing</button>
+                </div>
+                <div class="container-fluid p-4 pt-0 pb-0 p_tbdr">
+                    <header class="p_tbdr bg-white fixed-top">
+                        <div class="col-12 p-0 p_tbdr d-flex align-items-center justify-content-end">
+                                <div class="row m-0 h-100 ">
+                                <img src="https://akam.cdn.jdmagicbox.com/images/icontent/jdrwd/jdlogosvg.svg" alt="Website Banner" />
+                                </div>
+                                <ul class="nav p_dropdown p_wearehiring d-flex">
+                                    <li class="nav-item ">
+                                        <div class="dropdown p_dropdown2">
+                                <!-- Input outside the dropdown toggle -->
+                                <button class="btn btn-drop dropdown-toggle w-20 n_dropdown2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-location-dot n_dropdown2"> </i>
+                                <input type="text" placeholder="Select Location">
+                                </button>
+                                <!-- Dropdown menu -->
+                                <ul class="dropdown-menu p_dropdown2" id="locationDropdown">
+                                    <li><a class="dropdown-item" href="#">Mira Road East,Thane</a></li>
+                                    <li><a class="dropdown-item" href="#">Kandivali,Mumbai</a></li>
+                                    <li><a class="dropdown-item" href="#">Malad West,Mumbai</a></li>
+                                    <li><a class="dropdown-item" href="#">Kandivali West,Mumbai</a></li>
+                                    <li><a class="dropdown-item" href="#">Thane West,Thane</a></li>
+                                    <li><a class="dropdown-item" href="#">Nalasopara East,Palghar</a></li>
+                                    <li><a class="dropdown-item" href="#">Mumbai Central,Mumbai</a></li>
+                                </ul>
+                                <button class="btn p_dropdown2" type="button"  aria-expanded="false">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="textarea" placeholder="Search anywhere">
+                                    <i class="fa-solid fa-microphone"></i>
+                                </button>
+                                        <div class="dropdown ">
+                                            <button class="btn dropdown-toggle text-primary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-language text-primary"></i> En
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">English-EN</a></li>
+                                                <li><a class="dropdown-item" href="#">हिंदी - HI</a></li>
+                                                <li><a class="dropdown-item" href="#">मराठी - MR</a></li>
+                                                <li><a class="dropdown-item" href="#">বেঙ্গলি - BN</a></li>
+                                                
+                                                
+                                            </ul>
+                                            
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" class="btn"><a class="nav-link text-black p_wearehiering d-flex" href="#">We Are Hiring</a></button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" class="btn"><a class="nav-link text-black p_wearehiering d-flex" href="#">Investor Relations</a></button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" class="btn"><a class="nav-link text-black" href="#">Advertise
+                                            <i class="fa-solid fa-volume-high"></i>
+                                        </a></button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" class="btn"><a class="nav-link text-black" href="#"><i class="fa-solid fa-chart-line"></i> Free Listing</a></button>
+                                    </li>
+                                    <li class="nav-item p_bell">
+                                        <button type="button" class="btn btn-lg"><a class="nav-link text-black" href="#">
+                                            <i class="fa-regular fa-bell"></i>
+                                        </a></button>
+                                    </li>
+                                    <li class="nav-item p_dropdown">
+                                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Log-In / Sign-Up
+                                            <i class="fa-regular fa-circle-user"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul class="nav p_dropdown p_wearehiring d-flex">
-                            <li class="nav-item ">
-                                <div class="dropdown a_dropdown2">
-                        <!-- Input outside the dropdown toggle -->
-                        <button class="btn btn-drop dropdown-toggle w-20 n_dropdown2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-location-dot n_dropdown2"> </i>
-                        <input type="textarea" placeholder="Select Location">
-                        </button>
-                        <!-- Dropdown menu -->
-                        <ul class="dropdown-menu p_dropdown2" id="locationDropdown">
-                            <li><a class="dropdown-item" href="#">Mira Road East,Thane</a></li>
-                            <li><a class="dropdown-item" href="#">Kandivali,Mumbai</a></li>
-                            <li><a class="dropdown-item" href="#">Malad West,Mumbai</a></li>
-                            <li><a class="dropdown-item" href="#">Kandivali West,Mumbai</a></li>
-                            <li><a class="dropdown-item" href="#">Thane West,Thane</a></li>
-                            <li><a class="dropdown-item" href="#">Nalasopara East,Palghar</a></li>
-                            <li><a class="dropdown-item" href="#">Mumbai Central,Mumbai</a></li>
-                        </ul>
-                        <button class="btn p_dropdown2" type="button"  aria-expanded="false">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="textarea" placeholder="Search anywhere">
-                            <i class="fa-solid fa-microphone"></i>
-                        </button>
-                                <div class="dropdown ">
-                                    <button class="btn dropdown-toggle text-primary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa-solid fa-language text-primary"></i> En
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">English-EN</a></li>
-                                        <li><a class="dropdown-item" href="#">हिंदी - HI</a></li>
-                                        <li><a class="dropdown-item" href="#">मराठी - MR</a></li>
-                                        <li><a class="dropdown-item" href="#">বেঙ্গলি - BN</a></li>
-                                        
-                                        
-                                    </ul>
+                        
+                    </header>
+                    <main class="p_tbdr" id="mainContent">
+                       <span class="jsx-9ec486b44cf1ee7a home_input_title font26 fw700 color111 mb-15">
+                            <span class="jsx-9ec486b44cf1ee7a">Search across <!-- --> </span>
+                            <span class="jsx-9ec486b44cf1ee7a content__list__count pl-8" style="transform: translate3d(0px, 0px, 0px);">
+                            <span class="jsx-9ec486b44cf1ee7a">‘<!-- -->4.7 Crore<!-- -->+‘ 
+                               <span class="jsx-9ec486b44cf1ee7a color007">Businesses</span>
+                            </span>
+                            <span class="jsx-9ec486b44cf1ee7a">‘
+                               <span class="jsx-9ec486b44cf1ee7a dn">,</span> 
+                            <!-- -->5.9 Crore+<!-- -->’ 
+                            <span class="jsx-9ec486b44cf1ee7a color007">Products &amp; Services</span>
+                            </span>
+                            </span>
+                            <div class="jsx-9ec486b44cf1ee7a home_input_title font26 fw700 color111 mb-15">
+                                <ul class="jsx-9ec486b44cf1ee7a content__list pl-8" style="transform: translate3d(0px, 0px, 0px);">
+                                       <li class="jsx-9ec486b44cf1ee7a list__item color007"></li>
+                                       <li class="jsx-9ec486b44cf1ee7a list__item color007">
+                                   </li>
+                                </ul>
+                            </div>
+                        </span>
+
+                            <!-- This wrapper will move on scroll -->
+                            <div id="searchLocationWrapper" class="container d-flex gap-2 align-items-center py-2 flex-wrap">
+                            
+                                <!-- 📍 Select Location Input -->
+                                <div class="input-group location-box">
+                                    <span class="input-group-text">
+                                    <svg class="svg-inline--fa fa-location-dot text-primary" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path></svg><!-- <i class="fas fa-map-marker-alt text-primary"></i> Font Awesome fontawesome.com -->
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Select Location">
+                                </div>
+
+                                <!-- 🔍 Search For Input with Icon -->
+                                <div class="input-group search-box">
+                                    <span class="input-group-text bg-white border-end-0">
+                                    <svg class="svg-inline--fa fa-magnifying-glass text-primary" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg><!-- <i class="fas fa-search text-primary"></i> Font Awesome fontawesome.com -->
+                                    </span>
+                                    <input type="text" id="searchInput" class="form-control border-start-0" placeholder="Search for Restaurants">
+                                <button class="btn btn-outline-dark d-flex align-items-center ms-auto px-3 py-2 shadow-sm">
+                                <a title="Download Jd App" href="/JD-ON-MOBILE" class="jsx-9ec486b44cf1ee7a home_appdownload mt-50">
+                                    <div class="jsx-9ec486b44cf1ee7a getapp_button fw500 font13 color111">Download App</div>
+                                    <div class="jsx-9ec486b44cf1ee7a inner"></div>
+                                    <div class="jsx-9ec486b44cf1ee7a getapp_icon jdicon"></div>
+                                    <div class="jsx-9ec486b44cf1ee7a getapp_mobile"></div>
+                                </a>
+                                </button>
+
+                                </div>
+                                
+                            </div>
+
+                            
+                    
+                        </div>
+        
+
+                        <div class="container mt-3 p_slide">
+                        <div class="row overflow-hidden p_slide rounded-2 img-fluid">
+                            <div class="col-md-6 p_slide">
+                            <div id="carouselExampleAutoplaying" class="p_slidear slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                <img src="	https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_packersmovers_2024.webp" class="d-block w-100 h-100 object-fit-cover" alt="img">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_hotels_2024.webp" class="d-block w-100 h-100 object-fit-cover" alt="img">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_cctv_2024.webp" class="d-block w-100 h-100 object-fit-cover" alt="img">
+                                </div>
+                                <div class="carousel-item active">
+                                <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_loans_2024.webp" class="d-block w-100 h-100 object-fit-cover" alt="img">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_webflight_2024.webp" class="d-block w-100 h-100 object-fit-cover" alt="img">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_packersmovers_2024.webp" class="d-block w-100 h-100 object-fit-cover" alt="img">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                            </div>
+
+                            <!-- Category Cards -->
+                            <div class="col-md-6 p_slide">
+                            <div class="d-flex gap-3 mb-4 scroll-x">
+
+                                <!-- B2B -->
+                                <div class="category-card p_cards text-center position-relative overflow-hidden" style="background-image: url('https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/b2b_square_hotkey.webp?w=2048&amp;q=75'); background-size: cover; background-position: right; background-color: #0076D7;">
+                                <div class="position-absolute top-0 start-0 w-84 h-100" style="background: color rgba(14, 119, 205, 0.6);"></div>
+                                <div class="position-relative">
+                                    <h6>B2B</h6>
+                                    <small>Quick Quotes</small>
+                                </div>
+                                </div>
+
+                                <!-- Repairs & Services -->
+                                <div class="category-cardp_cards text-white text-center position-relative overflow-hidden" style="background-image: url('https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/repair_square_hotkey.webp?w=2048&amp;q=75'); background-size: cover; background-position: right; background-color: #0056b3;">
+                                <div class="position-absolute top-0 start-0 w-84 h-100" style="background-color:  rgba(14, 119, 205, 0.6);"></div>
+                                <div class="position-relative">
+                                    <h6>REPAIRS &amp; SERVICES</h6>
+                                    <small>Get Nearest Vendor</small>
+                                </div>
+                                </div>
+
+                                <!-- Real Estate -->
+                                <div class="category-cardp_cards text-white text-center position-relative overflow-hidden" style="background-image: url('https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/realestate_square_hotkey.webp?w=2048&amp;q=75'); background-size: cover; background-position: right; background-color:purple;">
+                                <div class="position-absolute top-0 start-0 w-84 h-100" style="background-color: rgba(14, 119, 205, 0.6);"></div>
+                                <div class="position-relative">
+                                    <h6>REAL ESTATE</h6>
+                                    <small>Finest Agents</small>
+                                </div>
+                                </div>
+
+                                <!-- Doctors -->
+                                <div class="category-cardp_cards text-white text-center position-relative overflow-hidden" style="background-image: url('https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/doctor_square_hotkey.webp?w=2048&amp;q=75'); background-size: cover; background-position: right; background-color: green;">
+                                <div class="position-absolute top-0 start-0 w-84 h-100" style="background-color:  rgba(14, 119, 205, 0.6);"></div>
+                                <div class="position-relative">
+                                    <h6>DOCTORS</h6>
+                                    <small>Book Now</small>
+                                </div>
+                                </div>
+
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <br>
+
+                        <div class="container text-center my-4 n_icons">
+                        <div class="row row-cols-10 btn-lg text-secondary">
+                            
+                            <div class="col">
+                            <button type="button" class="btn">
+                                <a href="./restaurant listing.html">
+                                <div class="icon-store">
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/restaurant-2022.svg?w=96&amp;q=75" alt="Flight">
+                                </div>
+                                </a>
+                            </button><br>Restaurants
+                            </div>
+
+                            <div class="col">
+                            <button type="button" class="btn">
+                                <a href="./Hotellisting.html" role="button">
+                                <div class="icon-store">
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hotel-2022.svg?w=96&amp;q=75" alt="Flight">
+                                </div>
+                                </a>
+                            </button><br>Hotels
+                            </div>
+
+                            <div class="col">
+                            <button type="button" class="btn">
+                                <a href="#" role="button">
+                                <div class="icon-store">
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/beauty.svg?w=96&amp;q=75" alt="Flight">
+                                </div>
+                                </a>
+                            </button><br>Beauty Spa
+                            </div>
+
+                            <div class="col">
+                            <button type="button" class="btn">
+                                <a href="#" role="button">
+                                <div class="icon-store">
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/homedecor.svg?w=96&amp;q=75" alt="Flight">
+                                </div>
+                                </a>
+                            </button><br>Home Decor
+                            </div>
+
+                            <div class="col">
+                            <button type="button" class="btn">
+                                <a href="#" role="button">
+                                <div class="icon-store">
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/hotkey_wedding_icon.gif?w=96&amp;q=75" alt="Flight">
+                                </div>
+                                </a>
+                            </button><br>Wedding Planning
+                            </div>
+
+
+                            <div class="col">
+                            <button type="button" class="btn">
+                                <a href="#" role="button">
+                                <div class="icon-store">
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/education.svg?w=96&amp;q=75" alt="Flight">
+                                </div>
+                                </a>
+                            </button><br>Education
+                            </div>
+
+                            <div class="col">
+                            <button type="button" class="btn">
+                                <a href="#" role="button">
+                                <div class="icon-store">
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/renthire.svg?w=96&amp;q=75" alt="Flight">
+                                </div>
+                                </a>
+                            </button><br>Rent &amp; Hire
+                            </div>
+
+                            <div class="col">                        
+                                <button type="button" class="btn">
+                                    <a href="#" role="button">
+                                    <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hospital_2023.svg?w=96&amp;q=75" alt="Flight">
+                                    </div>
+                                    </a>
+                                </button><br>Hospitals
+                            </div>
+
+                            <div class="col">             
+                                <button type="button" class="btn">
+                                    <a href="#" role="button">
+                                <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/contractor-2022.svg?w=96&amp;q=75" alt="Flight">
+                                </div>
+                                </a>
+                                </button><br>Contractors
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn">
+                                    <a href="#" role="button">
+                                <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pet_shops_2023.svg?w=96&amp;q=75" alt="Flight">
+                                    </div>
+                                    </a>
+                                </button><br>Pet Shops
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn">
+                                    <a href="#" role="button"></a>
+                                    <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pg-hostels-rooms.svg?w=96&amp;q=75" alt="Flight">
+                                    </div>
+                                    
+                                </button><br>PG &amp; Hostels
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn">
+                                    <a href="#" role="button">
+                                    <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/estate-agent.svg?w=96&amp;q=75" alt="Flight">
+                                    </div>
+                                    </a>
+                                </button><br>Estate Agent
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn">
+                                    <a href="#" role="button">
+                                    <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/eventorganizers.svg?w=96&amp;q=75" alt="Flight">
+                                    </div>
+                                    </a>
+                                </button><br>Event Organizers
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn">
+                                    <a href="#" role="button">
+                                    <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/courier_2023.svg?w=96&amp;q=75" alt="Flight">
+                                    </div>
+                                    </a>
+                                </button><br>Courier Services
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn">
+                                    <a href="#" role="button">
+                                <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newhotkey/loans.svg?w=96&amp;q=75" alt="Flight">
+                                    </div>
+                                    </a>
+                                </button><br>Loans
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn">
+                                    <a href="#" role="button">
+                                    <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/driving_school_2023.svg?w=96&amp;q=75" alt="Flight">
+                                    </div>
+                                    </a>
+                                </button><br>Driving Schools
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn">
+                                    <a href="#" role="button">
+                                <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/gym_2023.svg?w=96&amp;q=75" alt="Flight">
+                                    </div>
+                                    </a>
+                                </button><br>Gym
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn">
+                                    <a href="#" role="button">
+                                    <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/packers_movers_2023.svg?w=96&amp;q=75" alt="Flight">
+                                    </div>
+                                    </a>
+                                </button><br>Packers &amp; Movers
+                            </div>
+
+                            <div class="col">
+                                <button type="button" class="btn">
+                                    <a href="#" role="button">
+                                    <div class="icon-store">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/dentist_2023.svg?w=96&amp;q=75" alt="Flight">
+                                    </div>
+                                    </a>
+                                </button><br>Dentists
+                            </div>
+                            <button id="backToTopBtn" class="btn position-fixed" style="bottom: 20px; right: 20px; display: block; z-index: 999; background-color: white; color: black; border: 1px solid black">
+                                ⮝
+                            </button>
+                        </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="vertical-buttons" aria-label="Side vertical action buttons">
+                            <button class="side-button advertise" type="button" aria-label="Advertise">Advertise</button>
+                            <button class="side-button free-listing" type="button" aria-label="Free Listing">Free Listing</button>
+                        </div>
+
+                        <div class="container my-4 gap-2">
+                            <div class="row overflow-hidden p_slide rounded-2 img-fluid">
+                                <div class="col-md-6">
+                            <!-- Wedding Requisites -->
+                                <div class="category-section ">
+                                    <div class="category-title ">Wedding Requisites</div>
+                                    <div class="row text-center justify-content-center">
+                                    <div class="col-6 col-md-3 category-item">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banquethalls_rectangle_2024.webp?w=640&amp;q=75" alt="Banquet Halls">
+                                        <p>Banquet Halls</p>
+                                    </div>
+                                    <div class="col-6 col-md-3 category-item">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bridalrequisite_rectangle_2024.webp?w=640&amp;q=75" alt="Bridal Requisite">
+                                        <p>Bridal Requisite</p>
+                                    </div>
+                                    <div class="col-6 col-md-3 category-item">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/caterers_rectangle_2024.webp?w=640&amp;q=75" alt="Caterers">
+                                        <p>Caterers</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="col-md-6">
+                                <!-- Beauty & Spa -->
+                                <div class="category-section">
+                                    <div class="category-title">Beauty &amp; Spa</div>
+                                    <div class="row text-center justify-content-center">
+                                    <div class="col-6 col-md-3 category-item">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/beautyparlours_rectangle_2024.webp?w=640&amp;q=75" alt="Beauty Parlours">
+                                        <p>Beauty Parlours</p>
+                                    </div>
+                                    <div class="col-6 col-md-3 category-item">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/spamassages_rectangle_2024.webp?w=640&amp;q=75" alt="Spa &amp; Massages">
+                                        <p>Spa &amp; Massages</p>
+                                    </div>
+                                    <div class="col-6 col-md-3 category-item">
+                                        <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/salons_rectangle_2024.webp?w=640&amp;q=75" alt="Salons">
+                                        <p>Salons</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="container my-4">
+                                <div class="row overflow-hidden p_slide rounded-2 img-fluid">
+                                    <div class="col-md-6">
+                                        <!-- Repairs & Services -->
+                                        <div class="category-section">
+                                            <div class="category-title">Repairs &amp; Services</div>
+                                            <div class="row text-center justify-content-center">
+                                                <div class="col-6 col-md-3 category-item">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/hkim_acrepair.png?w=640&amp;q=75" alt="AC Service">
+                                                    <p>AC Service</p>
+                                                </div>
+                                                <div class="col-6 col-md-3 category-item">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/carservice_rectangle_2024.webp?w=640&amp;q=75" alt="Car Service">
+                                                    <p>Car Service</p>
+                                                </div>
+                                                <div class="col-6 col-md-3 category-item">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bikeservice_rectangle_2024.webp?w=640&amp;q=75" alt="Bike Service">
+                                                    <p>Bike Service</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                    </div>
+
+                                    <!-- Daily Needs -->
+                                    <div class="col-md-6">
+                                            <div class="category-section">
+                                            <div class="category-title">Daily Needs</div>
+                                                <div class="row text-center justify-content-center">
+                                                <div class="col-6 col-md-3 category-item">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/hkim_movies.png?w=640&amp;q=75" alt="Movies">
+                                                    <p>Movies</p>
+                                                </div>
+                                                <div class="col-6 col-md-3 category-item">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/grocery_rectangle_2024.webp?w=640&amp;q=75" alt="Grocery">
+                                                    <p>Grocery</p>
+                                                </div>
+                                                <div class="col-6 col-md-3 category-item">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/electricians_rectangle_2024.webp?w=640&amp;q=75" alt="Electricians">
+                                                    <p>Electricians</p>
+                                                </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <section>
+                                    <div class="container py-4">
+                                        <!-- Bills & Recharge -->
+                                        <div class="service-box">
+                                            <div class="row">
+                                            <div class="col-md-4">
+                                                <h5><strong>Bills &amp; Recharge</strong></h5>
+                                                <p class="text-muted">Pay your bills &amp; recharge instantly with Justdial</p>
+                                                <a href="#" class="text-primary fw-semibold">Explore More</a>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row text-center">
+                                                <div class="col-4 col-md-2">
+                                                    <div class="icon-box">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_mobile.svg?w=128&amp;q=75" alt="Mobile">
+                                                    </div>
+                                                    <p class="fw-medium">Mobile</p>
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <div class="icon-box">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_electricity.svg?w=128&amp;q=75" alt="Electricity">
+                                                    </div>
+                                                    <p class="fw-medium">Electricity</p>
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <div class="icon-box">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_dth.svg?w=128&amp;q=75" alt="DTH">
+                                                    </div>
+                                                    <p class="fw-medium">DTH</p>
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <div class="icon-box">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_water.svg?w=128&amp;q=75" alt="Water">
+                                                    </div>
+                                                    <p class="fw-medium">Water</p>
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <div class="icon-box">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_gas.svg?w=128&amp;q=75" alt="Gas">
+                                                    </div>
+                                                    <p class="fw-medium">Gas</p>
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <div class="icon-box">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_insurance.svg?w=128&amp;q=75" alt="Insurance">
+                                                    </div>
+                                                    <p class="fw-medium">Insurance</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Travel Bookings -->
+                                        <div class="service-box">
+                                            <div class="row">
+                                            <div class="col-md-4">
+                                                <h5><strong>Travel Bookings</strong></h5>
+                                                <p class="text-muted">Instant ticket bookings for your best travel experience</p>
+                                                <a href="#" class="text-primary fw-semibold">Explore More</a>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row text-center">
+                                                <div class="col-4 col-md-2">
+                                                    <div class="icon-box">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_flight.svg?w=128&amp;q=75" alt="Flight">
+                                                    </div>
+                                                    <p class="fw-medium">Flight</p>
+                                                    <small class="highlight-green">Powered by Easemytrip.com</small>
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <div class="icon-box">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_bus.svg?w=128&amp;q=75" alt="Bus">
+                                                    </div>
+                                                    <p class="fw-medium">Bus</p>
+                                                    <small class="highlight-green">Affordable Rides</small>
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <div class="icon-box">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_train.svg?w=128&amp;q=75" alt="Train">
+                                                    </div>
+                                                    <p class="fw-medium">Train</p>
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <div class="icon-box">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_hotels.svg?w=128&amp;q=75" alt="Hotel">
+                                                    </div>
+                                                    <p class="fw-medium">Hotel</p>
+                                                    <small class="highlight-green">Budget-friendly Stay</small>
+                                                </div>
+                                                <div class="col-4 col-md-2">
+                                                    <div class="icon-box">
+                                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/bt_carhire.svg?w=128&amp;q=75" alt="Car">
+                                                    </div>
+                                                    <p class="fw-medium">Car Rentals</p>
+                                                    <small class="highlight-green">Drive Easy Anywhere</small>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </section>
+                                        <section>
+                                            <div class="container my-5">
+                                                <!-- Title -->
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <h4 class="fw-bold mb-0">Trending Searches Near You</h4>
+                                                    <span class="badge bg-danger text-white ms-2">NEW</span>
+                                                </div>
+                                                <p class="text-muted mb-4">Stay updated with the latest local trends.</p>
+
+                                                <!-- Card List -->
+                                                <div class="row g-3 flex-nowrap overflow-auto" style="scroll-snap-type: x mandatory;">
+                                                    <!-- Card 1 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="./img/archery-classes-1-archery-classes-1-l95om.avif" class="img-fluid rounded-start" alt="Archery Classes">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Archery Classes</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!-- Card 2 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10948367.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Digital Marketing">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Digital Marketing Services</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!-- Card 3 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10059338.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Building Contractors</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                    <!--Card 4 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10104727.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Coffee Shops</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 5 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10925563.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Polytechnic Colleges</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 6 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/11250059.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Android Application Developers</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 7 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10080172.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Cardiologists</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 8 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/11123333.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Playgrounds</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 9 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10128276.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Construction Contractors</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 10 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/11123333.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Playgrounds</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                        </section></div>
+                                
+                                <section>
+                                    <div class="container my-5">
+                                    <h4 class="fw-bold mb-3">Latest Movies &amp; Review</h4>
+
+                                    <div class="d-flex overflow-auto gap-3 pb-3">
+                                        <!-- Movie Card 1 -->
+                                        <div class="position-relative" style="min-width: 180px;">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161987892025_06_06_05_14_13_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <div class="rating-badge">👍 80%</div>
+                                        <p class="fw-semibold mt-2 mb-0">Sitaare Zameen Par</p>
+                                        <small class="text-muted">Hindi • 2D</small>
+                                        </div>
+
+                                        <!-- Movie Card 2 -->
+                                        <div class="position-relative" style="min-width: 180px;">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161833792025_06_12_01_40_24_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <div class="rating-badge">👎 20%</div>
+                                        <p class="fw-semibold mt-2 mb-0">Maa (2025)</p>
+                                        <small class="text-muted">Hindi • 2D</small>
+                                        </div>
+
+                                        <!-- Movie Card 3 -->
+                                        <div class="position-relative" style="min-width: 180px;">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161391492024_11_27_06_32_12_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <div class="rating-badge">👍 80%</div>
+                                        <p class="fw-semibold mt-2 mb-0">F1</p>
+                                        <small class="text-muted">English • 2D</small>
+                                        </div>
+
+                                        <!-- Movie Card 4 -->
+                                        <div class="position-relative" style="min-width: 180px;">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161212992025_04_15_07_45_57_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <div class="rating-badge">👍 80%</div>
+                                        <p class="fw-semibold mt-2 mb-0">Kannappa</p>
+                                        <small class="text-muted">Tamil • 2D</small>
+                                        </div>
+
+                                        <!-- Movie Card 5 -->
+                                        <div class="position-relative" style="min-width: 180px;">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161999222025_05_23_04_22_20_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <div class="rating-badge">👍 60%</div>
+                                        <p class="fw-semibold mt-2 mb-0">Jarann</p>
+                                        <small class="text-muted">Marathi • 2D</small>
+                                        </div>
+
+                                        <!-- Movie Card 6 -->
+                                        <div class="position-relative" style="min-width: 180px;">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161710302025_02_28_01_05_51_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <div class="rating-badge">👍 70%</div>
+                                        <p class="fw-semibold mt-2 mb-0">Jurassic World</p>
+                                        <small class="text-muted">English • 2D</small>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </section>
+                                <section>
+                                            <div class="container my-5">
+                                                <!-- Title -->
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <h4 class="fw-bold mb-0">Rainy Day Essentials</h4>
+                                                    <span class="badge bg-danger text-white ms-2">SEASONAL</span>
+                                                </div>
+                                                <p class="text-muted mb-4">Discover wide range of rainy collection</p>
+
+                                                <!-- Card List -->
+                                                <div class="row g-3 flex-nowrap overflow-auto" style="scroll-snap-type: x mandatory;">
+                                                    <!-- Card 1 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10378025.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Archery Classes">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Plumbers</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!-- Card 2 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10533854.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Digital Marketing">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Waterproofing Contractors</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!-- Card 3 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10472227.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                        <h6 class="card-title fw-bold">Tarpaulin Dealers</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                    <!--Card 4 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10274634.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Inverter Dealers</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 5 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10925563.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Polytechnic Colleges</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 6 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/11250059.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Android Application Developers</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 7 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10080172.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Cardiologists</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 8 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/11123333.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Playgrounds</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 9 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10128276.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Construction Contractors</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 10 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/11123333.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Playgrounds</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                        </section></div>
+                                
+                                <section>
+                                    <div class="container my-5">
+                                                <!-- Title -->
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <h4 class="fw-bold mb-0">Explore Top Tourist Places</h4>
+                                                    <span class="badge bg-danger text-white ms-2">NEW</span>
+                                                </div>
+
+                                                <!-- Card List -->
+                                                <div class="row g-3 flex-nowrap overflow-auto" style="scroll-snap-type: x mandatory;">
+                                                    <!-- Card 1 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/Explorecities_Udaipur.png?t=1?w=256&amp;q=75" class="img-fluid rounded-start" alt="Udaipur">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Udaipur</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!-- Card 2 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/Explorecities_Ahmedabad.png?t=1?w=256&amp;q=75" class="img-fluid rounded-start" alt="Ahemdabad">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Ahemdabad</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!-- Card 3 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/Explorecities_Jaipur.png?t=1?w=256&amp;q=75" class="img-fluid rounded-start" alt="jaipur">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Jaipur</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                    <!--Card 4 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/Explorecities_Agra.png?t=1?w=256&amp;q=75" class="img-fluid rounded-start" alt="Agra">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Agra</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 5 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10925563.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Polytechnic Colleges</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 6 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/11250059.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Android Application Developers</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 7 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10080172.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Cardiologists</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 8 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/11123333.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Playgrounds</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 9 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/10128276.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Construction Contractors</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <!--Card 10 -->
+                                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="min-width: 250px;">
+                                                    <div class="card h-100">
+                                                        <div class="row g-0 align-items-center">
+                                                        <div class="col-5">
+                                                            <img src="https://content.jdmagicbox.com/comp/def_content/ncat_id/11123333.jpg?w=256&amp;q=75" class="img-fluid rounded-start" alt="Building Contractors">
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="card-body">
+                                                            <h6 class="card-title fw-bold">Playgrounds</h6>
+                                                            <a href="#" class="card-link text-primary">Explore <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg><!-- <i class="fa-solid fa-angle-right"></i> Font Awesome fontawesome.com --></a>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                        </section>
+                                    </main>
+                <footer class="p_tbdr">
+                    <div>
+                        <p>
+                            <div>
+                                <div class="social-icons">
+                                    <span>Follow us on</span>
+                                    <a href="https://www.facebook.com/JustDial"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.youtube.com/user/justdialind"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.instagram.com/jd_justdial"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/justdial"><i class="fab fa-linkedin-in"></i></a>
                                     
                                 </div>
-                            </li>
-                             <li class="nav-item">
-                                <button type="button" class="btn"><a class="nav-link text-black p_wearehiering d-flex" href="#">We Are Hiring</a></button>
-                            </li>
-                            <li class="nav-item">
-                                <button type="button" class="btn"><a class="nav-link text-black p_wearehiering d-flex" href="#">Investor Relations</a></button>
-                            </li>
-                             <li class="nav-item">
-                                <button type="button" class="btn"><a class="nav-link text-black" href="#">Advertise
-                                    <i class="fa-solid fa-volume-high"></i>
-                                </a></button>
-                            </li>
-                            <li class="nav-item">
-                                <button type="button" class="btn"><a class="nav-link text-black" href="#"><i class="fa-solid fa-chart-line"></i> Free Listing</a></button>
-                            </li>
-                            <li class="nav-item p_bell">
-                                <button type="button" class="btn btn-lg"><a class="nav-link text-black" href="#">
-                                    <i class="fa-regular fa-bell"></i>
-                                </a></button>
-                            </li>
-                            <li class="nav-item p_dropdown">
-                                <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Log-In / Sign-Up
-                                    <i class="fa-regular fa-circle-user"></i>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-            </header>
-            <main class="a_tbdr mt-5">
-                <br>
-                <section class="p_m1 mt-5 p-0 pt-5 ">
-                    <h2 class="mt-4">
-                    Search across <span class="fw-bold">'5.9 Crore+'</span> <span class="highlight-blue text-primary">Products &amp; Services</span>
-                    </h2>
-                     <div class="dropdown a_dropdown2">
-                        <!-- Input outside the dropdown toggle -->
-                        <button class="btn btn-drop dropdown-toggle w-20 n_dropdown2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-location-dot n_dropdown2"> </i>
-                        <input type="textarea" placeholder="Select Location">
-                        </button>
-                        <!-- Dropdown menu -->
-                        <ul class="dropdown-menu a_dropdown2" id="locationDropdown">
-                            <li><a class="dropdown-item" href="#">Mira Road East,Thane</a></li>
-                            <li><a class="dropdown-item" href="#">Kandivali,Mumbai</a></li>
-                            <li><a class="dropdown-item" href="#">Malad West,Mumbai</a></li>
-                            <li><a class="dropdown-item" href="#">Kandivali West,Mumbai</a></li>
-                            <li><a class="dropdown-item" href="#">Thane West,Thane</a></li>
-                            <li><a class="dropdown-item" href="#">Nalasopara East,Palghar</a></li>
-                            <li><a class="dropdown-item" href="#">Mumbai Central,Mumbai</a></li>
-                        </ul>
-                        <button class="btn n_dropdown2" type="button"  aria-expanded="false">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="textarea" placeholder="Search anywhere">
-                            <i class="fa-solid fa-microphone"></i>
-                        </button>
-                    </div>
-                </section>
-                <section class="p_tbdr p_m2">
-                    <div class="row m-0 h-100">
-                        <div class="col-6 p_tbdr p-0">
-                        <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="./img/ads1.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="./img/ads2.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="./img/ads3.png" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                        </div>
-                        </div> 
-                        <div class="col-5 p_tbdr p-0 m-5">
-                            <div>
-                                <img src="./img/sport.webp" class="d-block w-100 img-fluid">
-                            </div>
-
-                        </div> 
                         
+                            <h1>One-Stop for All Local Businesses, Services, & Stores Nearby Across India</h1> 
+                                <p>Welcome to Justdial, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and purchasing activities. We take pride in our iconic customer support number, 8888888888 and the fact that we own a strong hold on local business information pan India.</p>
+
+                                <p>Our service extends from providing address and contact details of business establishments around the country, to making orders and reservations for leisure, medical, financial, travel and domestic purposes. We enlist business information across varied sectors like Hotels, Restaurants, Auto Care, Home Decor, Personal and Pet Care, Fitness, Insurance, Real Estate, Sports, Schools, etc. from all over the country. Holding information right from major cities like Mumbai, Delhi, Bangalore, Hyderabad, Chennai, Ahmedabad and Pune our reach stretches out to other smaller cities across the country too.</p>
+
+                                <p>Our 'Free Listing' feature gives a platform to showcase varied specialities. We then furnish you with the information via phone, SMS, web, App and WAP as well as, create a space for you to share your experiences through our 'Rate & Review' feature. Through the 'Best Deals', 'Last Minute Deals' and 'Live Quotes', we make sure that you are offered the best bargains in the market.</p>
+                        </p>
                     </div>
-                </section>
-                 <div class="row p-0">
-                    
-                </div>
-                <section class="p_m3  text-danger ">
-                    <ul class="nav ">
-                     <li class="nav-item round_boarder border-dark m-3 p_underline  ">
-                            <a class="nav-link active  " aria-current="page" href="restaurant listing.html"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/restaurant-2022.svg?w=48&q=75"/>
-                            <h6 >Restaurants</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hotel-2022.svg?w=48&q=75"/>
-                            <h6>Hotels</h6>
-                        </li>
-                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/beauty.svg?w=48&q=75"/>
-                            <h6>Beauty Spa</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link " href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/homedecor.svg?w=48&q=75"/>
-                            <h6>Home Decor</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link active" aria-current="page" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/hotkey_wedding_icon.gif?w=48&q=75"/>
-                            <h6>Wedding Planning</h6>
-                        </li>
-                        <li class="nav-item p-3  round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/education.svg?w=48&q=75"/>
-                            <h6>Education</h6>
-                        </li>
-                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/renthire.svg?w=48&q=75"/>
-                            <h6>Rent&Hire</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link " href="#"></a>
-                            <img src="	https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hospital_2023.svg?w=48&q=75"/>
-                            <h6>Hospitals</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link active" aria-current="page" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/contractor-2022.svg?w=48&q=75"/>
-                            <h6>Contracters</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pet_shops_2023.svg?w=48&q=75"/>
-                            <h6>Pet Shops</h6>
-                        </li>
-                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pg,hostelsandrooms.svg"/>
-                            <h6>PG/Hostels</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link " href="#" ></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/estate-agent.svg?w=48&q=75"/>
-                            <h6>Estate Agents</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link active" aria-current="page" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/dentist_2023.svg?w=48&q=75"/>
-                            <h6>Dentists</h6>
-                        </li>
-                        <li class="nav-item p-3  round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/gym_2023.svg?w=48&q=75"/>
-                            <h6>Gym</h6>
-                        </li>
-                        <li class=" nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newhotkey/loans.svg?w=48&q=75"/>
-                            <h6>Loan</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link " href="#" ></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newhotkey/loans.svg?w=48&q=75"/>
-                            <h6>Event Organizers</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link active" aria-current="page" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/driving_school_2023.svg?w=48&q=75"/>
-                            <h6>Driving Schools</h6>
-                        </li>
-                        <li class="nav-item p-3 round_boarder border-dark m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/packers_movers_2023.svg?w=48&q=75"/>
-                            <h6>Packers&Movers</h6>
-                        </li>
-                        <li class=" nav-item p-3 round_boarder border-dark  m-3 p_underline">
-                            <a class="nav-link" href="#"></a>
-                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/courier_2023.svg?w=48&q=75"/>
-                            <h6>Courier Services</h6>
-                        </li>
-                     </ul>
-                </section>
-                <section class="p_tbdr p_m4">
-                        <div class="container my-4">
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                <div class="bg-light p-3 rounded shadow-sm">
-                                    <div class="section-title">Wedding Requisites</div>
-                                    <div class="row text-center">
-                                    <div class="col-4">
-                                        <div class="card custom-card">
-                                        <img src="./img/banquet.jpg" class="card-img-top" alt="Banquet Halls">
-                                        <div class="card-body p-2">
-                                            <p class="card-text small">Banquet Halls</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card custom-card">
-                                        <img src="./img/bridal.jpg" class="card-img-top" alt="Bridal">
-                                        <div class="card-body p-2">
-                                            <p class="card-text small">Bridal Requisite</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card custom-card">
-                                        <img src="./img/carters.jpg" class="card-img-top" alt="Caterers">
-                                        <div class="card-body p-2">
-                                            <p class="card-text small">Caterers</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="col-6">
-                                        <div class="card custom-card">
-                                        <img src="./img/jewel.jpg" class="card-img-top" alt="jewelery">
-                                        <div class="card-body p-2">
-                                            <p class="card-text small">jewellery</p>
-                                            
-                                </div>
-                </section>
-                
-                <section class="p_tbdr p_m5">
-                    <div class="container-fluid bg-warning-subtle py-4">
-                      <h4 class="fw-bold text-success mb-4">Latest Movies & Review</h4>
-                        <div class="row g-4">
-                    
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/Sitaare_Zameen_Par_poster.jpg.webp" class="img-fluid rounded mb-2" alt="Sitaare Zameen Par">
-                            <p class="mb-1 fw-bold">Sitaare Zameen Par<br><small class="text-muted">(Hindi Movie)</small></p>
-                            <p class="text-muted">Hindi &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 78%</span>
+                    <div class="container my-5 p_foot">
+                        <h5 class="mb-4 fw-semibold">Some of our services that will prove useful to you on a day-to-day basis are :</h5>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                            <!-- B2B -->
+                            <div class="col">
+                            <div class="service-box">
+                                <i class="fa-solid fa-handshake"></i>
+                                <h6 class="mt-2">B2B</h6>
+                                <p class="mb-0">Experience the ultimate B2B portal by Justdial. You can explore countless diverse categories, innumerable top-quality vendors, and an unmatched wholesale experience. You'll find everything you need for B2B requirements on this exclusive platform. Our interactive interface allows you to apply relevant filters, ascertain the best rates, and get instant assistance via chat.</p>
                             </div>
-                            
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/Maa_(2025_film).jpg" class="img-fluid rounded mb-2" alt="Maa 2025">
-                            <p class="mb-1 fw-bold">Maa (2025 Film)<br><small class="text-muted">(Hindi Movie)</small></p>
-                            <p class="text-muted">Hindi &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 20%</span>
                             </div>
-                            
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/f1.jpg" class="img-fluid rounded mb-2" alt="F1">
-                            <p class="mb-1 fw-bold">F1</p>
-                            <p class="text-muted">English &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 20%</span>
+
+                            <!-- All India -->
+                            <div class="col">
+                            <div class="service-box">
+                                <i class="fa-solid fa-globe-asia"></i>
+                                <h6 class="mt-2">All India</h6>
+                                <p class="mb-0">Elevate your search for B2B requisites. From lead generation to promoting and selling products/services, Justdial enables enterprises to reach vast audiences all across India. Embracing digital strategies, Justdial India encompasses manufacturers, dealers, suppliers, vendors, wholesalers, and more, offering convenience in the B2B market space and empowering businesses nationwide.</p>
                             </div>
-                            
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/jaran.jpg" class="img-fluid rounded mb-2" alt="Jarann">
-                            <p class="mb-1 fw-bold">Jarann<br><small class="text-muted">(Marathi Movie)</small></p>
-                            <p class="text-muted">Marathi &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 60%</span>
                             </div>
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/meg.avif" class="img-fluid rounded mb-2" alt="meg">
-                            <p class="mb-1 fw-bold">Meg<br><small class="text-muted">(english)</small></p>
-                            <p class="text-muted">Hollywood &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 95%</span>
+
+                            <!-- Packers and Movers -->
+                            <div class="col">
+                            <div class="service-box">
+                                <i class="fa-solid fa-truck-moving"></i>
+                                <h6 class="mt-2">Packers and Movers</h6>
+                                <p class="mb-0">If you’re relocating to another place, or even if you just want to send some belongings elsewhere, find the best deals on the most reliable packers and movers for your location. Get quotes from multiple agencies, read reviews from previous customers, and check ratings before making a selection for a hassle-free experience.</p>
                             </div>
-                            <div class="col-8 col-4 col-md-2 text-center">
-                            <img src="./img/squid.jpg" class="img-fluid rounded mb-2" alt="squid game">
-                            <p class="mb-1 fw-bold">squid game<br><small class="text-muted">(hollywood)</small></p>
-                            <p class="text-muted">series &bull; 2D</p>
-                            <span class="badge bg-light text-dark"><i class="bi bi-hand-thumbs-up-fill text-danger"></i> 99%</span>
                             </div>
-                </section>
-           
-        </main>
-        <footer class="n_tbdr">
-            <div>
-                <p>
-                    <div>
-                        <div class="social-icons">
-                            <span>Follow us on</span>
-                            <a href="https://www.facebook.com/JustDial"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.youtube.com/user/justdialind"><i class="fab fa-youtube"></i></a>
-                            <a href="https://www.instagram.com/jd_justdial"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/justdial"><i class="fab fa-linkedin-in"></i></a>
-                            
+
+                            <!-- Order Food Online -->
+                            <div class="col">
+                            <div class="service-box">
+                                <i class="fa-solid fa-utensils"></i>
+                                <h6 class="mt-2">Order Food Online</h6>
+                                <p class="mb-0">You are just three clicks away from placing an order and exploring a wide range of exotic cuisines. Order food online with Justdial and get your favourite food delivered at your doorstep. Search for restaurants, view reviews and ratings, avail discounts and order your food.</p>
+                            </div>
+                            </div>
+
+                            <!-- Jobs -->
+                            <div class="col">
+                            <div class="service-box">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h6 class="mt-2">Jobs</h6>
+                                <p class="mb-0">Providing pertinent jobs to job seekers and relevant profiles to employers, this service will help you reach out to employers and vice-versa across industry verticals, experience levels and geographies.</p>
+                            </div>
+                            </div>
+
+                            <!-- Movies -->
+                            <div class="col">
+                            <div class="service-box">
+                                <i class="fa-solid fa-film"></i>
+                                <h6 class="mt-2">Movies</h6>
+                                <p class="mb-0">This gives you access to book tickets and keep updated with the latest movies. With the provision of a synopsis, cast, crew and trailer, you can make a better choice in the movie you would like to watch.</p>
+                            </div>
+                            </div>
+
+                            <!-- Spa & Salon -->
+                            <div class="col">
+                            <div class="service-box">
+                                <i class="fa-solid fa-spa"></i>
+                                <h6 class="mt-2">Spa & Salon</h6>
+                                <p class="mb-0">Skip the wait to get pampered at a spa or a salon. In a few clicks, 'Book an Appointment' online through Justdial before your next visit.</p>
+                            </div>
+                            </div>
+
+                            <!-- Repair & Services -->
+                            <div class="col">
+                            <div class="service-box">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <h6 class="mt-2">Repair & Services</h6>
+                                <p class="mb-0">Find the 'Best Deal', be it for repairing your air-conditioner, getting your car serviced or cleaning your water purifier and drive your utility problems away.</p>
+                            </div>
+                            </div>
+
+                            <!-- Doctor Appointment -->
+                            <div class="col">
+                            <div class="service-box">
+                                <i class="fa-solid fa-user-doctor"></i>
+                                <h6 class="mt-2">Doctor Appointment</h6>
+                                <p class="mb-0">Find the suitable medical specialist to take care of your health and well-being. Healthcare made easy.</p>
+                            </div>
+                            </div>
+                            <br>
                         </div>
-                    </div>
-                
-                    <h1>One-Stop for All Local Businesses, Services, & Stores Nearby Across India</h1> 
-                        <p>Welcome to Justdial, your 'one stop shop' where you are assisted with day-to-day and exclusive planning and purchasing activities. We take pride in our iconic customer support number, 8888888888 and the fact that we own a strong hold on local business information pan India.</p>
-
-                        <p>Our service extends from providing address and contact details of business establishments around the country, to making orders and reservations for leisure, medical, financial, travel and domestic purposes. We enlist business information across varied sectors like Hotels, Restaurants, Auto Care, Home Decor, Personal and Pet Care, Fitness, Insurance, Real Estate, Sports, Schools, etc. from all over the country. Holding information right from major cities like Mumbai, Delhi, Bangalore, Hyderabad, Chennai, Ahmedabad and Pune our reach stretches out to other smaller cities across the country too.</p>
-
-                        <p>Our 'Free Listing' feature gives a platform to showcase varied specialities. We then furnish you with the information via phone, SMS, web, App and WAP as well as, create a space for you to share your experiences through our 'Rate & Review' feature. Through the 'Best Deals', 'Last Minute Deals' and 'Live Quotes', we make sure that you are offered the best bargains in the market.</p>
-                </p>
-            </div>
-            <div class="container my-5 n_foot">
-                <h5 class="mb-4 fw-semibold">Some of our services that will prove useful to you on a day-to-day basis are :</h5>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                    <!-- B2B -->
-                    <div class="col">
-                    <div class="service-box">
-                        <i class="fa-solid fa-handshake"></i>
-                        <h6 class="mt-2">B2B</h6>
-                        <p class="mb-0">Experience the ultimate B2B portal by Justdial. You can explore countless diverse categories, innumerable top-quality vendors, and an unmatched wholesale experience. You'll find everything you need for B2B requirements on this exclusive platform. Our interactive interface allows you to apply relevant filters, ascertain the best rates, and get instant assistance via chat.</p>
-                    </div>
-                    </div>
-
-                    <!-- All India -->
-                    <div class="col">
-                    <div class="service-box">
-                        <i class="fa-solid fa-globe-asia"></i>
-                        <h6 class="mt-2">All India</h6>
-                        <p class="mb-0">Elevate your search for B2B requisites. From lead generation to promoting and selling products/services, Justdial enables enterprises to reach vast audiences all across India. Embracing digital strategies, Justdial India encompasses manufacturers, dealers, suppliers, vendors, wholesalers, and more, offering convenience in the B2B market space and empowering businesses nationwide.</p>
-                    </div>
-                    </div>
-
-                    <!-- Packers and Movers -->
-                    <div class="col">
-                    <div class="service-box">
-                        <i class="fa-solid fa-truck-moving"></i>
-                        <h6 class="mt-2">Packers and Movers</h6>
-                        <p class="mb-0">If you’re relocating to another place, or even if you just want to send some belongings elsewhere, find the best deals on the most reliable packers and movers for your location. Get quotes from multiple agencies, read reviews from previous customers, and check ratings before making a selection for a hassle-free experience.</p>
-                    </div>
-                    </div>
-
-                    <!-- Order Food Online -->
-                    <div class="col">
-                    <div class="service-box">
-                        <i class="fa-solid fa-utensils"></i>
-                        <h6 class="mt-2">Order Food Online</h6>
-                        <p class="mb-0">You are just three clicks away from placing an order and exploring a wide range of exotic cuisines. Order food online with Justdial and get your favourite food delivered at your doorstep. Search for restaurants, view reviews and ratings, avail discounts and order your food.</p>
-                    </div>
-                    </div>
-
-                    <!-- Jobs -->
-                    <div class="col">
-                    <div class="service-box">
-                        <i class="fa-solid fa-briefcase"></i>
-                        <h6 class="mt-2">Jobs</h6>
-                        <p class="mb-0">Providing pertinent jobs to job seekers and relevant profiles to employers, this service will help you reach out to employers and vice-versa across industry verticals, experience levels and geographies.</p>
-                    </div>
-                    </div>
-
-                    <!-- Movies -->
-                    <div class="col">
-                    <div class="service-box">
-                        <i class="fa-solid fa-film"></i>
-                        <h6 class="mt-2">Movies</h6>
-                        <p class="mb-0">This gives you access to book tickets and keep updated with the latest movies. With the provision of a synopsis, cast, crew and trailer, you can make a better choice in the movie you would like to watch.</p>
-                    </div>
-                    </div>
-
-                    <!-- Spa & Salon -->
-                    <div class="col">
-                    <div class="service-box">
-                        <i class="fa-solid fa-spa"></i>
-                        <h6 class="mt-2">Spa & Salon</h6>
-                        <p class="mb-0">Skip the wait to get pampered at a spa or a salon. In a few clicks, 'Book an Appointment' online through Justdial before your next visit.</p>
-                    </div>
-                    </div>
-
-                    <!-- Repair & Services -->
-                    <div class="col">
-                    <div class="service-box">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                        <h6 class="mt-2">Repair & Services</h6>
-                        <p class="mb-0">Find the 'Best Deal', be it for repairing your air-conditioner, getting your car serviced or cleaning your water purifier and drive your utility problems away.</p>
-                    </div>
-                    </div>
-
-                    <!-- Doctor Appointment -->
-                    <div class="col">
-                    <div class="service-box">
-                        <i class="fa-solid fa-user-doctor"></i>
-                        <h6 class="mt-2">Doctor Appointment</h6>
-                        <p class="mb-0">Find the suitable medical specialist to take care of your health and well-being. Healthcare made easy.</p>
-                    </div>
+                            <p>Some of the other services that can be of assistance to you for leisure, health and home convenience are - Pest Control, Skin Care Clinics, Painters, Laundry Services, Interior Designers, Mobile Phone Repair, Vaccination Centres, Internet Service Providers, etc. With an endless number of things under the sun, you can be sure this will be your 'One Stop Shop' to find everything and more.</p>
                     </div>
                     <br>
-                </div>
-                    <p>Some of the other services that can be of assistance to you for leisure, health and home convenience are - Pest Control, Skin Care Clinics, Painters, Laundry Services, Interior Designers, Mobile Phone Repair, Vaccination Centres, Internet Service Providers, etc. With an endless number of things under the sun, you can be sure this will be your 'One Stop Shop' to find everything and more.</p>
-            </div>
-            <br>
-            <br>
-            <p>Copyrights 2008-25.  All Rights Reserved.PrivacyTermsInfringement</p>
-            <br>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
+                    <br>
+                    <p>Copyrights 2008-25.  All Rights Reserved.PrivacyTermsInfringement</p>
+                    <br>
+                </footer>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script>
 
-            let triggered = false;
+                    let triggered = false;
 
-            window.onscroll = function () {
-                    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-                    const windowHeight = window.innerHeight;
-                    const docHeight = document.documentElement.scrollHeight;
+                    window.onscroll = function () {
+                            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+                            const windowHeight = window.innerHeight;
+                            const docHeight = document.documentElement.scrollHeight;
 
-                    const scrollPercent = (scrollTop / (docHeight - windowHeight)) * 100;
+                            const scrollPercent = (scrollTop / (docHeight - windowHeight)) * 100;
 
-                    const element = document.querySelectorAll('p_wearehiring');
-                    const elementt =  document.querySelector('p_gototop');
-                    if (scrollPercent >= 0.2){
-                        
-                        console.log("Hello World");
-                        if(element && element.style.display !== "none") {
-                            element.style.display = "none"; // Hide Element
-                        }
-                    }else {
-                        if(element && element.style.display === "none") {
-                            element.style.display = "block"; // Show Element 
-                        }
+                            const element = document.querySelectorAll('p_wearehiring');
+                            const elementt =  document.querySelector('p_gototop');
+                            if (scrollPercent >= 0.2){
+                                
+                                console.log("Hello World");
+                                if(element && element.style.display !== "none") {
+                                    element.style.display = "none"; // Hide Element
+                                }
+                            }else {
+                                if(element && element.style.display === "none") {
+                                    element.style.display = "block"; // Show Element 
+                                }
+                            }
+                            if(scrollPercent >= 0.2){
+
+                                console.log("haa");
+                                if (elementt.classList.contains("d-none")) {
+                                    elementt.classList.remove("d-none"); 
+                                    elementt.classList.add("d-flex");
+
+                                }
+                            } else {
+                                if(!elementt.classList.contains("d-none")) {
+                                    elementt.classList.remove("d-flex"); 
+                                    elementt.classList.add("d-none");
+
+
+                                }
+                                
+                            }
+                        };
+                </script>
+                <script>
+                    function goToTop(){
+
+                        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
                     }
-                    if(scrollPercent >= 0.2){
-
-                        console.log("haa");
-                        if (elementt.classList.contains("d-none")) {
-                            elementt.classList.remove("d-none"); 
-                            elementt.classList.add("d-flex");
-
-                        }
-                    } else {
-                        if(!elementt.classList.contains("d-none")) {
-                            elementt.classList.remove("d-flex"); 
-                            elementt.classList.add("d-none");
-
-
-                        }
-                        
+                </script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                    // Back to top button functionality
+                    const backToTopBtn = document.getElementById('backToTopBtn');
+                    if (backToTopBtn) {
+                        backToTopBtn.addEventListener('click', function() {
+                            window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            });
+                        });
                     }
-                };
-        </script>
-        <script>
-            function goToTop(){
-
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
-        </script>
-    </body>
+                });
+                </script>
+            </body>
 </html>
