@@ -177,6 +177,11 @@
                 padding: 2rem;
                 border-radius: 8px;
             }
+            .icon-store img {
+                width: 64px;
+                height: auto;
+            }
+
             
             </style>
             </head>
@@ -211,7 +216,9 @@
                                 </ul>
                                 <button class="btn p_dropdown2" type="button"  aria-expanded="false">
                                     <i class="fa-solid fa-magnifying-glass"></i>
-                                <input type="textarea" placeholder="Search anywhere">
+                                   
+                                    
+                                    <input type="text" value="Search anywhere">
                                     <i class="fa-solid fa-microphone"></i>
                                 </button>
                                         <div class="dropdown ">
@@ -223,40 +230,38 @@
                                                 <li><a class="dropdown-item" href="#">हिंदी - HI</a></li>
                                                 <li><a class="dropdown-item" href="#">मराठी - MR</a></li>
                                                 <li><a class="dropdown-item" href="#">বেঙ্গলি - BN</a></li>
-                                                
-                                                
                                             </ul>
                                             
                                         </div>
+                                    
+                                   <li class="nav-item">
+                                        <a href="#" class="btn nav-link text-black p_wearehiering d-flex">We Are Hiring</a>
                                     </li>
                                     <li class="nav-item">
-                                        <button type="button" class="btn"><a class="nav-link text-black p_wearehiering d-flex" href="#">We Are Hiring</a></button>
+                                        <a href="#" class="btn nav-link text-black p_wearehiering d-flex">Investor Relations</a>
+                                    </li>
+                                   <li class="nav-item">
+                                        <a href="#" class="btn nav-link text-black p_wearehiering d-flex">Advertise</a>
                                     </li>
                                     <li class="nav-item">
-                                        <button type="button" class="btn"><a class="nav-link text-black p_wearehiering d-flex" href="#">Investor Relations</a></button>
+                                        <a href="#" class="btn nav-link text-black p_wearehiering d-flex">Free Listing</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <button type="button" class="btn"><a class="nav-link text-black" href="#">Advertise
-                                            <i class="fa-solid fa-volume-high"></i>
-                                        </a></button>
-                                    </li>
-                                    <li class="nav-item">
-                                        <button type="button" class="btn"><a class="nav-link text-black" href="#"><i class="fa-solid fa-chart-line"></i> Free Listing</a></button>
-                                    </li>
-                                    <li class="nav-item p_bell">
-                                        <button type="button" class="btn btn-lg"><a class="nav-link text-black" href="#">
+                                    <li class= "nav-item p_bell btn btn-lg"  type="button">
+                                       <a class="nav-link text-black" href="#">
                                             <i class="fa-regular fa-bell"></i>
-                                        </a></button>
+                                        </a>
                                     </li>
                                     <li class="nav-item p_dropdown">
-                                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Log-In / Sign-Up
-                                            <i class="fa-regular fa-circle-user"></i>
+                                       <button class="btn btn-primary btn-sm" type="button" 
+                                                data-bs-toggle="offcanvas" 
+                                                data-bs-target="#offcanvasRight" 
+                                                aria-controls="offcanvasRight"
+                                                aria-label="Log in or sign up">
+                                            Log-In / Sign-Up <i class="fa-regular fa-circle-user ms-1"></i>
                                         </button>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                        
+                </div>
                     </header>
                     <main class="p_tbdr" id="mainContent">
                        <span class="jsx-9ec486b44cf1ee7a home_input_title font26 fw700 color111 mb-15">
@@ -297,14 +302,12 @@
                                     <svg class="svg-inline--fa fa-magnifying-glass text-primary" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg><!-- <i class="fas fa-search text-primary"></i> Font Awesome fontawesome.com -->
                                     </span>
                                     <input type="text" id="searchInput" class="form-control border-start-0" placeholder="Search for Restaurants">
-                                <button class="btn btn-outline-dark d-flex align-items-center ms-auto px-3 py-2 shadow-sm">
-                                <a title="Download Jd App" href="/JD-ON-MOBILE" class="jsx-9ec486b44cf1ee7a home_appdownload mt-50">
-                                    <div class="jsx-9ec486b44cf1ee7a getapp_button fw500 font13 color111">Download App</div>
-                                    <div class="jsx-9ec486b44cf1ee7a inner"></div>
-                                    <div class="jsx-9ec486b44cf1ee7a getapp_icon jdicon"></div>
-                                    <div class="jsx-9ec486b44cf1ee7a getapp_mobile"></div>
+                               <a title="Download Jd App" href="/JD-ON-MOBILE" class="btn btn-outline-dark d-flex align-items-center ms-auto px-3 py-2 shadow-sm text-decoration-none">
+                                    <div class="getapp_button fw500 font13 color111">Download App</div>
+                                    <div class="inner"></div>
+                                    <div class="getapp_icon jdicon"></div>
+                                    <div class="getapp_mobile"></div>
                                 </a>
-                                </button>
 
                                 </div>
                                 
@@ -312,7 +315,7 @@
 
                             
                     
-                        </div>
+                        
         
 
                         <div class="container mt-3 p_slide">
@@ -356,7 +359,7 @@
 
                                 <!-- B2B -->
                                 <div class="category-card p_cards text-center position-relative overflow-hidden" style="background-image: url('https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/b2b_square_hotkey.webp?w=2048&amp;q=75'); background-size: cover; background-position: right; background-color: #0076D7;">
-                                <div class="position-absolute top-0 start-0 w-84 h-100" style="background: color rgba(14, 119, 205, 0.6);"></div>
+                                <div class="position-absolute top-0 start-0 w-84 h-100" style="background-color: rgba(14, 119, 205, 0.6);"></div>
                                 <div class="position-relative">
                                     <h6>B2B</h6>
                                     <small>Quick Quotes</small>
@@ -394,210 +397,173 @@
                             </div>
                         </div>
                         </div>
-                        <br>
+                        
 
-                        <div class="container text-center my-4 n_icons">
-                        <div class="row row-cols-10 btn-lg text-secondary">
-                            
-                            <div class="col">
-                            <button type="button" class="btn">
-                                <a href="./restaurant listing.html">
-                                <div class="icon-store">
-                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/restaurant-2022.svg?w=96&amp;q=75" alt="Flight">
+                                        <section class="m-10 mt-5">
+                                <div class="category-grid">
+                                    <a href="restaurant_listing.html">
+                                        <div class="category-item a_m2 h-100">
+                                            <div class="category-content text-center">
+                                                <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/restaurant-2022.svg?w=48&q=75"
+                                                    alt="Restaurants">
+                                                <p>Restaurants</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hotel-2022.svg?w=48&q=75"
+                                                alt="Hotels">
+                                            <p>Hotels</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/beauty.svg?w=48&q=75"
+                                                alt="Beauty Spa">
+                                            <p>Beauty Spa</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/homedecor.svg?w=48&q=75"
+                                                alt="Home decore">
+                                            <p>Home decore</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/hotkey_wedding_icon.gif?w=48&q=75"
+                                                alt="Wedding planning">
+                                            <p>Wedding planning</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/education.svg?w=48&q=75"
+                                                alt="Education">
+                                            <p>Education</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/renthire.svg?w=48&q=75"
+                                                alt="Rent &amp; Hire">
+                                            <p>Rent &amp; Hire</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="	https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hospital_2023.svg?w=48&q=75"
+                                                alt="Hospital">
+                                            <p>Hospitals</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/contractor-2022.svg?w=48&q=75"
+                                                alt="Constructor">
+                                            <p>Contractors</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pet_shops_2023.svg?w=48&q=75"
+                                                alt="Pet Shops">
+                                            <p>Pet Shops</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pg,hostelsandrooms.svg"
+                                                alt="PG/Hostals">
+                                            <p>PG/Hostals</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/estate-agent.svg?w=48&q=75"
+                                                alt="Dentists">
+                                            <p>Estate Agents</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/dentist_2023.svg?w=48&q=75"
+                                                alt="Dentists">
+                                            <p>Dentists</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/gym_2023.svg?w=48&q=75"
+                                                alt="GYM">
+                                            <p>GYM</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newhotkey/loans.svg?w=48&q=75"
+                                                alt="Loans">
+                                            <p>Loans</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/eventorganizers.svg?w=48&q=75"
+                                                alt="Driving schools">
+                                            <p>Event Organizers</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/driving_school_2023.svg?w=48&q=75"
+                                                alt="Driving schools">
+                                            <p>Driving schools</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/packers_movers_2023.svg?w=48&q=75"
+                                                alt="Courier Service">
+                                            <p>Packers & Movers</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-item a_m2 h-100">
+                                        <div class="category-content text-center">
+                                            <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/courier_2023.svg?w=48&q=75"
+                                                alt="Courier Service">
+                                            <p>Courier Service</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                </a>
-                            </button><br>Restaurants
-                            </div>
+                            </section>
 
-                            <div class="col">
-                            <button type="button" class="btn">
-                                <a href="./Hotellisting.html" role="button">
-                                <div class="icon-store">
-                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hotel-2022.svg?w=96&amp;q=75" alt="Flight">
-                                </div>
-                                </a>
-                            </button><br>Hotels
-                            </div>
-
-                            <div class="col">
-                            <button type="button" class="btn">
-                                <a href="#" role="button">
-                                <div class="icon-store">
-                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/beauty.svg?w=96&amp;q=75" alt="Flight">
-                                </div>
-                                </a>
-                            </button><br>Beauty Spa
-                            </div>
-
-                            <div class="col">
-                            <button type="button" class="btn">
-                                <a href="#" role="button">
-                                <div class="icon-store">
-                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/homedecor.svg?w=96&amp;q=75" alt="Flight">
-                                </div>
-                                </a>
-                            </button><br>Home Decor
-                            </div>
-
-                            <div class="col">
-                            <button type="button" class="btn">
-                                <a href="#" role="button">
-                                <div class="icon-store">
-                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/hotkey_wedding_icon.gif?w=96&amp;q=75" alt="Flight">
-                                </div>
-                                </a>
-                            </button><br>Wedding Planning
-                            </div>
-
-
-                            <div class="col">
-                            <button type="button" class="btn">
-                                <a href="#" role="button">
-                                <div class="icon-store">
-                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/education.svg?w=96&amp;q=75" alt="Flight">
-                                </div>
-                                </a>
-                            </button><br>Education
-                            </div>
-
-                            <div class="col">
-                            <button type="button" class="btn">
-                                <a href="#" role="button">
-                                <div class="icon-store">
-                                    <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/renthire.svg?w=96&amp;q=75" alt="Flight">
-                                </div>
-                                </a>
-                            </button><br>Rent &amp; Hire
-                            </div>
-
-                            <div class="col">                        
-                                <button type="button" class="btn">
-                                    <a href="#" role="button">
-                                    <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/hospital_2023.svg?w=96&amp;q=75" alt="Flight">
-                                    </div>
-                                    </a>
-                                </button><br>Hospitals
-                            </div>
-
-                            <div class="col">             
-                                <button type="button" class="btn">
-                                    <a href="#" role="button">
-                                <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/contractor-2022.svg?w=96&amp;q=75" alt="Flight">
-                                </div>
-                                </a>
-                                </button><br>Contractors
-                            </div>
-
-                            <div class="col">
-                                <button type="button" class="btn">
-                                    <a href="#" role="button">
-                                <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pet_shops_2023.svg?w=96&amp;q=75" alt="Flight">
-                                    </div>
-                                    </a>
-                                </button><br>Pet Shops
-                            </div>
-
-                            <div class="col">
-                                <button type="button" class="btn">
-                                    <a href="#" role="button"></a>
-                                    <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/pg-hostels-rooms.svg?w=96&amp;q=75" alt="Flight">
-                                    </div>
-                                    
-                                </button><br>PG &amp; Hostels
-                            </div>
-
-                            <div class="col">
-                                <button type="button" class="btn">
-                                    <a href="#" role="button">
-                                    <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/estate-agent.svg?w=96&amp;q=75" alt="Flight">
-                                    </div>
-                                    </a>
-                                </button><br>Estate Agent
-                            </div>
-
-                            <div class="col">
-                                <button type="button" class="btn">
-                                    <a href="#" role="button">
-                                    <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/eventorganizers.svg?w=96&amp;q=75" alt="Flight">
-                                    </div>
-                                    </a>
-                                </button><br>Event Organizers
-                            </div>
-
-                            <div class="col">
-                                <button type="button" class="btn">
-                                    <a href="#" role="button">
-                                    <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/courier_2023.svg?w=96&amp;q=75" alt="Flight">
-                                    </div>
-                                    </a>
-                                </button><br>Courier Services
-                            </div>
-
-                            <div class="col">
-                                <button type="button" class="btn">
-                                    <a href="#" role="button">
-                                <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newhotkey/loans.svg?w=96&amp;q=75" alt="Flight">
-                                    </div>
-                                    </a>
-                                </button><br>Loans
-                            </div>
-
-                            <div class="col">
-                                <button type="button" class="btn">
-                                    <a href="#" role="button">
-                                    <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/driving_school_2023.svg?w=96&amp;q=75" alt="Flight">
-                                    </div>
-                                    </a>
-                                </button><br>Driving Schools
-                            </div>
-
-                            <div class="col">
-                                <button type="button" class="btn">
-                                    <a href="#" role="button">
-                                <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/gym_2023.svg?w=96&amp;q=75" alt="Flight">
-                                    </div>
-                                    </a>
-                                </button><br>Gym
-                            </div>
-
-                            <div class="col">
-                                <button type="button" class="btn">
-                                    <a href="#" role="button">
-                                    <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/packers_movers_2023.svg?w=96&amp;q=75" alt="Flight">
-                                    </div>
-                                    </a>
-                                </button><br>Packers &amp; Movers
-                            </div>
-
-                            <div class="col">
-                                <button type="button" class="btn">
-                                    <a href="#" role="button">
-                                    <div class="icon-store">
-                                        <img src="https://akam.cdn.jdmagicbox.com/images/icons/newwap/newhotkey/dentist_2023.svg?w=96&amp;q=75" alt="Flight">
-                                    </div>
-                                    </a>
-                                </button><br>Dentists
-                            </div>
                             <button id="backToTopBtn" class="btn position-fixed" style="bottom: 20px; right: 20px; display: block; z-index: 999; background-color: white; color: black; border: 1px solid black">
                                 ⮝
                             </button>
-                        </div>
-                        </div>
+                        
+                        
 
-                        <br>
-                        <br>
-
+                        
                         <div class="vertical-buttons" aria-label="Side vertical action buttons">
                             <button class="side-button advertise" type="button" aria-label="Advertise">Advertise</button>
                             <button class="side-button free-listing" type="button" aria-label="Free Listing">Free Listing</button>
@@ -986,7 +952,7 @@
                                     <div class="d-flex overflow-auto gap-3 pb-3">
                                         <!-- Movie Card 1 -->
                                         <div class="position-relative" style="min-width: 180px;">
-                                        <img src="https://images.jdmagicbox.com/movies/centralized_161987892025_06_06_05_14_13_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161987892025_06_06_05_14_13_220.jpg?w=2048&amp;q=75" alt="movie img" class="img-fluid movie-card">
                                         <div class="rating-badge">👍 80%</div>
                                         <p class="fw-semibold mt-2 mb-0">Sitaare Zameen Par</p>
                                         <small class="text-muted">Hindi • 2D</small>
@@ -994,7 +960,7 @@
 
                                         <!-- Movie Card 2 -->
                                         <div class="position-relative" style="min-width: 180px;">
-                                        <img src="https://images.jdmagicbox.com/movies/centralized_161833792025_06_12_01_40_24_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161833792025_06_12_01_40_24_220.jpg?w=2048&amp;q=75" alt="movie img" class="img-fluid movie-card">
                                         <div class="rating-badge">👎 20%</div>
                                         <p class="fw-semibold mt-2 mb-0">Maa (2025)</p>
                                         <small class="text-muted">Hindi • 2D</small>
@@ -1002,7 +968,7 @@
 
                                         <!-- Movie Card 3 -->
                                         <div class="position-relative" style="min-width: 180px;">
-                                        <img src="https://images.jdmagicbox.com/movies/centralized_161391492024_11_27_06_32_12_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161391492024_11_27_06_32_12_220.jpg?w=2048&amp;q=75" alt="movie img" class="img-fluid movie-card">
                                         <div class="rating-badge">👍 80%</div>
                                         <p class="fw-semibold mt-2 mb-0">F1</p>
                                         <small class="text-muted">English • 2D</small>
@@ -1010,7 +976,7 @@
 
                                         <!-- Movie Card 4 -->
                                         <div class="position-relative" style="min-width: 180px;">
-                                        <img src="https://images.jdmagicbox.com/movies/centralized_161212992025_04_15_07_45_57_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161212992025_04_15_07_45_57_220.jpg?w=2048&amp;q=75" alt="movie img" class="img-fluid movie-card">
                                         <div class="rating-badge">👍 80%</div>
                                         <p class="fw-semibold mt-2 mb-0">Kannappa</p>
                                         <small class="text-muted">Tamil • 2D</small>
@@ -1018,7 +984,7 @@
 
                                         <!-- Movie Card 5 -->
                                         <div class="position-relative" style="min-width: 180px;">
-                                        <img src="https://images.jdmagicbox.com/movies/centralized_161999222025_05_23_04_22_20_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161999222025_05_23_04_22_20_220.jpg?w=2048&amp;q=75" alt="movie img" class="img-fluid movie-card">
                                         <div class="rating-badge">👍 60%</div>
                                         <p class="fw-semibold mt-2 mb-0">Jarann</p>
                                         <small class="text-muted">Marathi • 2D</small>
@@ -1026,7 +992,7 @@
 
                                         <!-- Movie Card 6 -->
                                         <div class="position-relative" style="min-width: 180px;">
-                                        <img src="https://images.jdmagicbox.com/movies/centralized_161710302025_02_28_01_05_51_220.jpg?w=2048&amp;q=75" class="img-fluid movie-card">
+                                        <img src="https://images.jdmagicbox.com/movies/centralized_161710302025_02_28_01_05_51_220.jpg?w=2048&amp;q=75" alt="movie img" class="img-fluid movie-card">
                                         <div class="rating-badge">👍 70%</div>
                                         <p class="fw-semibold mt-2 mb-0">Jurassic World</p>
                                         <small class="text-muted">English • 2D</small>
@@ -1421,14 +1387,14 @@
                                 <p>Our service extends from providing address and contact details of business establishments around the country, to making orders and reservations for leisure, medical, financial, travel and domestic purposes. We enlist business information across varied sectors like Hotels, Restaurants, Auto Care, Home Decor, Personal and Pet Care, Fitness, Insurance, Real Estate, Sports, Schools, etc. from all over the country. Holding information right from major cities like Mumbai, Delhi, Bangalore, Hyderabad, Chennai, Ahmedabad and Pune our reach stretches out to other smaller cities across the country too.</p>
 
                                 <p>Our 'Free Listing' feature gives a platform to showcase varied specialities. We then furnish you with the information via phone, SMS, web, App and WAP as well as, create a space for you to share your experiences through our 'Rate & Review' feature. Through the 'Best Deals', 'Last Minute Deals' and 'Live Quotes', we make sure that you are offered the best bargains in the market.</p>
-                        </p>
+                        
                     </div>
                     <div class="container my-5 p_foot">
                         <h5 class="mb-4 fw-semibold">Some of our services that will prove useful to you on a day-to-day basis are :</h5>
                         <div class="row row-cols-1 row-cols-md-3 g-4">
 
                             <!-- B2B -->
-                            <div class="col">
+                            <div class="col text-center">
                             <div class="service-box">
                                 <i class="fa-solid fa-handshake"></i>
                                 <h6 class="mt-2">B2B</h6>
@@ -1437,7 +1403,7 @@
                             </div>
 
                             <!-- All India -->
-                            <div class="col">
+                            <div class="col text-center">
                             <div class="service-box">
                                 <i class="fa-solid fa-globe-asia"></i>
                                 <h6 class="mt-2">All India</h6>
@@ -1446,7 +1412,7 @@
                             </div>
 
                             <!-- Packers and Movers -->
-                            <div class="col">
+                            <div class="col text-center">
                             <div class="service-box">
                                 <i class="fa-solid fa-truck-moving"></i>
                                 <h6 class="mt-2">Packers and Movers</h6>
@@ -1455,7 +1421,7 @@
                             </div>
 
                             <!-- Order Food Online -->
-                            <div class="col">
+                            <div class="col text-center">
                             <div class="service-box">
                                 <i class="fa-solid fa-utensils"></i>
                                 <h6 class="mt-2">Order Food Online</h6>
@@ -1464,7 +1430,7 @@
                             </div>
 
                             <!-- Jobs -->
-                            <div class="col">
+                            <div class="col text-center">
                             <div class="service-box">
                                 <i class="fa-solid fa-briefcase"></i>
                                 <h6 class="mt-2">Jobs</h6>
@@ -1473,7 +1439,7 @@
                             </div>
 
                             <!-- Movies -->
-                            <div class="col">
+                            <div class="col text-center">
                             <div class="service-box">
                                 <i class="fa-solid fa-film"></i>
                                 <h6 class="mt-2">Movies</h6>
@@ -1482,7 +1448,7 @@
                             </div>
 
                             <!-- Spa & Salon -->
-                            <div class="col">
+                            <div class="col text-center">
                             <div class="service-box">
                                 <i class="fa-solid fa-spa"></i>
                                 <h6 class="mt-2">Spa & Salon</h6>
@@ -1491,7 +1457,7 @@
                             </div>
 
                             <!-- Repair & Services -->
-                            <div class="col">
+                            <div class="col text-center">
                             <div class="service-box">
                                 <i class="fa-solid fa-screwdriver-wrench"></i>
                                 <h6 class="mt-2">Repair & Services</h6>
@@ -1500,7 +1466,7 @@
                             </div>
 
                             <!-- Doctor Appointment -->
-                            <div class="col">
+                            <div class="col text-center">
                             <div class="service-box">
                                 <i class="fa-solid fa-user-doctor"></i>
                                 <h6 class="mt-2">Doctor Appointment</h6>
